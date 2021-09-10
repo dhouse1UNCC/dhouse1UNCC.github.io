@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href="../styles/default.css" rel="stylesheet" type="text/css">
+		<link href="../styles/activity3.css" rel="stylesheet" type="text/css">
+		<title>Daniel House, ITIS-3135-051, Activity 3 - HTML Forms Submission </title>
+	</head>
+	<body>
+		<header>
+			<h1>Daniel House >> ITIS3135-051</h1>
+			<br>
+		</header>
+		<nav>
+			<a href="../introduction.htm">Introduction</a>
+			|| 
+			<a href="#">Contract</a>
+			||
+			<a href="../Activities">Activities</a>
+		</nav>
+		<main>
+			<h2>Activity 3 - HTML Forms Submission</h2>
+			<form>
+				<div>
+					<label for="name"><input id="name" type="text" placeholder="Name" required></label>
+					<label for="email"><input id="email" type="text" placeholder="E-mail" required></label>
+					<label for="phone"><input id="phone" type="number" placeholder="Phone Number" required></label><br>
+				</div>
+				<div>
+					<label for="taste">Choose a flavor:</label>
+					
+					<select id="taste" name="taste">
+						<option value="sweet">Sweet</option>
+						<option value="salty">Salty</option>
+						<option value="savory">Savory</option>
+						<option value="bitter">Bitter</option>
+						<option value="umami">Umami</option>
+					</select><br>
+				</div>
+				<div>
+					Diet type:
+					<label for="vegetarian"><input id="vegetarian" type="checkbox" name="diet" value="vegetarian">Vegetarian</label>
+					<label for="vegan"><input id="vegan" type="checkbox" name="diet" value="vegan">Vegan</label>
+					<label for="pescetarian"><input id="pescetarian" type="checkbox" name="diet" value="pescetarian">Pescetarian</label>
+					<label for="keto"><input id="keto" type="checkbox" name="diet" value="keto">Keto</label>
+					<label for="atkins"><input id="atkins" type="checkbox" name="diet" value="atkins">Atkins</label><br>
+				</div>
+				<div>
+					Any Allergies?
+					<label for="no-allergy"><input id="no-allergy" type="radio" name="allergy-or-not" value="no" checked>No</label>
+					<label for="allergy"><input id="allergy" type="radio" name="allergy-or-not" value="yes">Yes</label><br>
+					If so, please list known allergies:<br>
+					<label for ="allergy-list"><input type="text" id="allergy-list"></label>
+				</div>
+				
+				<button type="submit">Sign-up</button>
+			</form>
+		</main>
+		<footer>
+				<br>
+				<nav>
+					<a href="http://webpages.uncc.edu/dhouse1/" target="_blank">Charlotte.edu</a> &#9553;
+					<a href="https://github.com/dhouse1UNCC" target="_blank">Github</a> &#9553;
+					<a href="https://dhouse1uncc.github.io/" target="_blank">Github.io</a> &#9553;
+					<a href="https://dhouse1uncc.github.io/itis3135" target="_blank">ITIS 3135 Github Pages</a> &#9553;
+					<a href="#">Codecademy</a> &#9553;
+					<a href="https://www.freecodecamp.org/danhouse1" target="_blank">freeCodeCamp</a> &#9553; 
+					<a href="#">JSFiddle</a> &#9553;
+					<a href="https://www.linkedin.com/in/daniel-house-563b0b126/" target="_blank">LinkedIn</a>
+				</nav>
+				<p>
+					Page built by Daniel House
+				</p>
+				<a href="#" target="_blank">
+					<img src="../images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+				</a>
+				<a href="#" target="_blank">
+					<img src="../images/vcss.gif" width="88" height="31" alt="Link to CSS validator">
+				</a>
+				
+		</footer>
+	</body>
+</html>
