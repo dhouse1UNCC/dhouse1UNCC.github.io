@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="../styles/default.css" rel="stylesheet" type="text/css">
-		<link href="../styles/activity3.css" rel="stylesheet" type="text/css">
 		<title>Daniel House, ITIS-3135-051, Activity 3 - HTML Forms Submission </title>
 	</head>
 	<body>
@@ -20,13 +19,13 @@
 		</nav>
 		<main>
 			<h2>Activity 3 - HTML Forms Submission</h2>
-			<form>
-				<div>
+			<form class="signup">
+				<div class="formSection">
 					<label for="name"><input id="name" type="text" placeholder="Name" required></label>
 					<label for="email"><input id="email" type="text" placeholder="E-mail" required></label>
 					<label for="phone"><input id="phone" type="number" placeholder="Phone Number" required></label><br>
 				</div>
-				<div>
+				<div class="formSection">
 					<label for="taste">Choose a flavor:</label>
 					
 					<select id="taste" name="taste">
@@ -37,7 +36,7 @@
 						<option value="umami">Umami</option>
 					</select><br>
 				</div>
-				<div>
+				<div class="formSection">
 					Diet type:
 					<label for="vegetarian"><input id="vegetarian" type="checkbox" name="diet" value="vegetarian">Vegetarian</label>
 					<label for="vegan"><input id="vegan" type="checkbox" name="diet" value="vegan">Vegan</label>
@@ -45,7 +44,7 @@
 					<label for="keto"><input id="keto" type="checkbox" name="diet" value="keto">Keto</label>
 					<label for="atkins"><input id="atkins" type="checkbox" name="diet" value="atkins">Atkins</label><br>
 				</div>
-				<div>
+				<div class="formSection">
 					Any Allergies?
 					<label for="no-allergy"><input id="no-allergy" type="radio" name="allergy-or-not" value="no" checked>No</label>
 					<label for="allergy"><input id="allergy" type="radio" name="allergy-or-not" value="yes">Yes</label><br>
@@ -53,7 +52,7 @@
 					<label for ="allergy-list"><input type="text" id="allergy-list"></label>
 				</div>
 				
-				<button type="submit">Sign-up</button>
+				<button type="submit" style="margin-left:1rem;">Sign-up</button>
 			</form>
 		</main>
 		<footer>

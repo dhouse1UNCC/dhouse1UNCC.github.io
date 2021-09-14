@@ -1,6 +1,6 @@
 body
 {
-	font-family: "Copperplate";
+	font-family: fantasy;
 	color: #473144;
 	background-color:salmon;
 	margin-left: 75px;
@@ -14,10 +14,13 @@ header, footer
 
 h1, h2, h3
 {
-	font-family: cursive;
+	font-family: fantasy;
 	text-align: center;
 	line-height: 0px;
 	font-size: 50px;
+}
+main{
+	font-family: cursive;
 }
 a{
 	text-decoration: none;
@@ -39,10 +42,56 @@ figcaption
 }
 nav{
 	text-align: center;
+	font-size:32px;
 }
 .text{
 	 font-size: 32px;
 }
-.right{
-	float:right;
+
+.formSection{
+	font-family: Cambria, Cochin, Georgia, serif;
+	background-color: #FADA70;
+	margin-top:.5rem;
+	margin-bottom:1rem;
+	padding:1rem 1rem 1rem 1rem;
+	border-radius:10%;
+	box-shadow:.4rem .4rem #64572c;
+	font-size: 16px;
+	text-align: left;
+	line-height: 1rem;
+}
+.signup{
+	background-color: #FA70BE;
+	padding: 1rem 1rem 1rem 1rem;
+	margin-right:30%;
+	margin-left: 30%;
+	font-size: 2rem;
+	border-radius:10%;
+	box-shadow:.4rem .4rem #642c4c
+}
+tbody td:nth-child(3){
+	text-align:right;
+}
+tbody td:nth-child(4){
+	text-align:center;
+}
+tbody tr:nth-child(odd){
+	background-color: #8c579c;
+}
+table{
+	border-collapse: collapse;
+	margin: 20px auto;
+	font-size:20px;
+	color: black;
+	background-color: #24468e;
+	}
+thead{
+background-color: #d8097e;
+}
+
+th, td{
+	border: 1px solid black;
+	padding: .5em 1em .5em .5em;
+	text-align: left;
+	vertical-align: middle;
 }
