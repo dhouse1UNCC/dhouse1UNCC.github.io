@@ -1,0 +1,14 @@
+body{
+	background-color: black;
+}
+address{
+	background-color: orange;
+}
+.foreground {
+	background-color: darkorange;
+}
+ img{
+	 float: right;
+	 border-radius: 50%;
+ }
+ 
