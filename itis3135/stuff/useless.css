@@ -1,0 +1,27 @@
+h1{
+	font-family: "Papyrus", fantasy;
+	background-color: purple;
+}
+h2{
+	font-family: "Comic Sans MS";
+}
+nav{
+	font-family: "Times New Roman";
+	text-align: right;
+}
+ul{
+	text-align: center;
+}
+.awful{
+	font-size:75px;
+	text-align: center;
+	margin-left: 600px;
+	margin-right:300px;
+	background-color: pink;
+}
+main{
+	background-color: red;
+}
+nav{
+	background-color: yellow;
+}
