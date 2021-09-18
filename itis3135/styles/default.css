@@ -1,36 +1,47 @@
 body
 {
 	font-family: fantasy;
-	color: #473144;
-	background-color:salmon;
+	color: #2B4570;
+	background-color:#D5C9DF;
 	margin-left: 75px;
 	margin-right: 75px;
 }
-
-header, footer
+header, footer, nav
 {
+	color:#303766;
 	text-align:center;
 }
+main a{
+	color:#264653;
+}
 
-h1, h2, h3
+h1, h2
 {
 	font-family: fantasy;
 	text-align: center;
 	line-height: 0px;
 	font-size: 50px;
+	margin-bottom:1em;
+}
+h3{
+	font-family:fantasy;
+	text-align:left;
+	line-height:0px;
+	font-size:36px;
 }
 main{
 	font-family: cursive;
+	font-size:24px;
 }
 a{
 	text-decoration: none;
-	color: #AF1B3F;
+	color: #6DB1BF;
 	font-weight: bold;
 }
 a:hover
 {
 	text-decoration: underline;
-	color: #AF1B3F;
+	color: #4C7B98;
 }
 figure
 {
