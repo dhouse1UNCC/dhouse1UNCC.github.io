@@ -30,8 +30,8 @@ function rollADie(){
 
 //Randomly gives the user a goblin name
 function goblinName(){
-	var firstNameSelector = (Math.floor(Math.random()*5));
-	var lastNameSelector = (Math.floor(Math.random()*5));
+	var firstNameSelector = (Math.floor(Math.random()*7));
+	var lastNameSelector = (Math.floor(Math.random()*7));
 	var firstName = "";
 	var lastName = "";
 	var greeting = "";
@@ -75,7 +75,7 @@ function magicType(){
 
 //Displays conents of our "goblin bag"
 function goblinBag(){
-	var itemSelector=(Math.floor(Math.random()*6));
+	var itemSelector=(Math.floor(Math.random()*5));
 	var itemType = "";
 	var reaction ="";
 	alert("You reach into your goblin pack...");
