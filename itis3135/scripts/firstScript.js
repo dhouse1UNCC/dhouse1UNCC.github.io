@@ -12,6 +12,7 @@ function startupScript(){
 	document.write("Today is " + today.getMonth() + "/" + today.getDay() + "/" + (today.getYear()+1900) +
 	"<br>The time is: " + today.getHours() + ":" + today.getMinutes() +"<br>");
 	document.write("The " + company + " welcomes you, " + name + "!<br>We're glad you're doing " +mood+ " today!<br>");
+document.write('<figure><img src="../images/hobgoblin.png" alt="A leprotic goblin" width="279" height="300" style="float:right";><!-- image source https://www.pngwing.com/en/free-png-huejk --></figure>');
 	document.write('<button onclick="rollADie()">Roll a d20</button>');
 	document.write('<button onclick="goblinName()">Generate Goblin Name</button>');
 	document.write('<button onclick="magicType()">Find Your Magic Type</button>');
