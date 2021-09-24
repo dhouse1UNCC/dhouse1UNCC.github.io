@@ -75,7 +75,7 @@ function magicType(){
 
 //Displays conents of our "goblin bag"
 function goblinBag(){
-	var itemSelector=(Math.floor(Math.random()*5));
+	var itemSelector=(Math.floor(Math.random()*7));
 	var itemType = "";
 	var reaction ="";
 	alert("You reach into your goblin pack...");
@@ -84,9 +84,12 @@ function goblinBag(){
 		case 1: itemType="rat tails"; reaction="Yummy";break;
 		case 2: itemType="a strange paste"; reaction="You're not sure how to feel";break;
 		case 3: itemType="a family photo"; reaction="You still remember the day you stole it";break;
-		case 4: itemType="a family photo"; reaction="You still remember the day you stole it";break;
+		case 4: itemType="some stale bread"; reaction="If you had any teeth left, this would sure finish the job";break;
+		case 5: itemType="a small dagger"; reaction="Pointy";break;
+		case 6: itemType="a gold coin"; reaction="Lucky you"; break;
 	}
-	 alert("...You found " + itemType + ". " + reaction + "!");
+	alert("...You found " + itemType + ". " + reaction + "!");
+	if(itemSelector===6){alert("...Sadly in your excitement you droped it in a well!");}
 }
 
 //User functionallity to calculate distance on a dnd board, where a 1 in. x 1 in. block represents 5 ft x 5 ft spaces.
