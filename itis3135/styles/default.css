@@ -2,17 +2,14 @@ body
 {
 	font-family: fantasy;
 	color: #2B4570;
-	background-color:#D5C9DF;
+	background-color:#3AAFB9;
 	margin-left: 75px;
 	margin-right: 75px;
 }
 header, footer, nav
 {
-	color:#303766;
+	color:#001011;
 	text-align:center;
-}
-main a{
-	color:#264653;
 }
 
 h1, h2
@@ -22,6 +19,7 @@ h1, h2
 	line-height: 0px;
 	font-size: 50px;
 	margin-bottom:1em;
+	color: #001011;
 }
 h3{
 	font-family:fantasy;
@@ -35,12 +33,12 @@ main{
 }
 a{
 	text-decoration: underline;
-	color: #6DB1BF;
+	color: #001011;
 	font-weight: bold;
 }
 a:hover
 {
-	color: #4C7B98;
+	color: #093A3E;
 }
 figure
 {
@@ -50,10 +48,7 @@ figcaption
 {
 	font-style: italic;
 }
-nav{
-	text-align: center;
-	font-size:32px;
-}
+
 .text{
 	 font-size: 32px;
 }
@@ -79,12 +74,6 @@ nav{
 	border-radius:10%;
 	box-shadow:.4rem .4rem #642c4c
 }
-tbody td:nth-child(3){
-	text-align:right;
-}
-tbody td:nth-child(4){
-	text-align:center;
-}
 tbody tr:nth-child(odd){
 	background-color: #8c579c;
 }
@@ -102,6 +91,33 @@ background-color: #d8097e;
 th, td{
 	border: 1px solid black;
 	padding: .5em 1em .5em .5em;
-	text-align: left;
+	text-align: center;
 	vertical-align: middle;
+}
+
+nav{
+	text-align: center;
+	font-size:32px;
+	display: flex;
+}
+
+.topnav a{
+	flex-basis:25%;
+	display:block;
+}
+
+a button{
+	display:block;
+	width:100%;
+	background-color: #64E9EE;
+	border-radius: 5%;
+	height:150%;
+}
+a button:hover{
+	background-color: #4D6CFA;
+}
+
+.bottomnav a{
+	flex-basis:12.5%;
+	display:block;
 }

@@ -9,11 +9,11 @@
 		<header>
 			<h1>ITIS-3135-051 // Daniel House</h1>
 		</header>
-		<nav>
-			<a href="../introduction.htm">Introduction</a> &sect;
-			<a href="#">Contract</a> &sect;
-			<a href="../activities/">Activities</a> &sect;
-			<a href="../website_evaluations.htm">Website Evaluations</a>
+		<nav class ="topnav">
+			<a href="../introduction.htm"><button>Introduction</button></a>
+			<a href="#"><button>Contract</button></a>
+			<a href="../activities/"><button>Activities</button></a>
+			<a href="../website_evaluations.htm"><button>Website Evaluations</button></a>
 		</nav>
 		<main>
 			<h2>Activity 2: HTML Tables</h2>
@@ -75,81 +75,103 @@
 				</tbody>	
 			</table>
 			<h3>Employee Data in Complex Table</h3>
-			<table>
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>E-mail</th>
-						<th class="right">Years of Service</th>
-						<th>Position</th>
-						<th>Salary</th>
-						<th>Total Yrs. of Service</th>
-						<th>Total Salary</th>
-					</tr>
-				</thead>
-				<tbody>	
-					<tr>
-						<td>Mel Klein</td>
-						<td>mklein@bbincorporated.com</td>
-						<td>2</td>
-						<td>Pasta Puller</td>
-						<td>$45,000</td>
-						<td rowspan="7">68</td>
-						<td rowspan="7">$362,000</td>
-					</tr>
-					<tr>
-						<td>Daniel House</td>
-						<td>dhouse@bbincorporated.com</td>
-						<td>9</td>
-						<td rowspan="3">Butter Batterer</td>
-						<td>$52,000</td>
-					</tr>
-					<tr>
-						<td>Lamar House III</td>
-						<td>lhouse@bbincorporated.com</td>
-						<td >0</td>
-						<td>$33,000</td>
-					</tr>					
-					<tr>
-						<td>Justin Deane</td>
-						<td>jdeane@bbincorporated.com</td>
-						<td>8</td>
-						<td>$50,000</td>
-					</tr>					
-					<tr>
-						<td>Darien Jones</td>
-						<td>djones@bbincorporated.com</td>
-						<td class="right">23</td>
-						<td rowspan="3">Canoli Creamer</td>
-						<td>$68,000</td>
-					</tr>
-					<tr>
-						<td>Nathaniel Berg</td>
-						<td>nberg@bbincorporated.com</td>
-						<td>8</td>
-						<td>$52,000</td>
-					</tr>
-					<tr>
-						<td>Aloysius Lieb</td>
-						<td>alieb@bbincorporated.com</td>
-						<td>18</td>
-						<td>$62,000</td>
-					</tr>				
-				</tbody>	
-			</table>
+			<figure>
+			<figcaption>An Employee information chart that includes company position, salary, 
+			years of service as well as each employee's favorite pasta and pastry.</figcaption>
+				<table>
+					<thead>
+						<tr>
+							<th id="position">Position</th>
+							<th id="name">Name</th>
+							<th id ="email">E-mail</th>
+							<th id="serviceyears" class="right">Years of Service</th>
+							<th id="salary">Salary</th>
+							<th id="favoritepasta">Favorite Pasta</th>
+							<th id="favoritepastry">Favorite Pastry</th>
+						</tr>
+					</thead>
+					<tbody>	
+						<tr>
+							<td headers="position">Pasta Puller</td>
+							<td headers="name">Mel Klein</td>
+							<td headers="email mel klein">mklein@bbincorporated.com</td>
+							<td headers="service mel klein">2</td>
+							<td headers="salary mel klein">$45,000</td>
+							<td headers="favoritepasta mel klein">Angel Hair</td>
+							<td headers="favoritepastry mel klein">Eclairs</td>
+						</tr>
+						<tr>
+							<td rowspan="3" headers="position">Butter Batterer</td>
+							<td headers="name">Daniel House</td>
+							<td headers="email daniel house">dhouse@bbincorporated.com</td>
+							<td headers="service daniel house">21</td>
+							<td headers="salary daniel house">$52,000</td>
+							<td headers="favoritepasta daniel house">Fettuccine</td>
+							<td headers="favoritepastry daniel house">Apple Pies</td>
+						</tr>
+						<tr>
+							<td headers="name">Lamar House III</td>
+							<td headers="email lamar house">lhouse@bbincorporated.com</td>
+							<td headers="service lamar house" >0</td>
+							<td headers="salary lamar house">$33,000</td>
+							<td headers="favoritepasta lamar house">Elbow</td>
+							<td headers="favoritepastry lamar house">Eclairs</td>
+						</tr>					
+						<tr>
+							<td headers="name">Justin Deane</td>
+							<td headers="email justin deane">jdeane@bbincorporated.com</td>
+							<td headers="service justin deane">8</td>
+							<td headers="salary justin deane">$50,000</td>
+							<td headers="favoritepasta justin deane">Raviolis</td>
+							<td headers="favoritepastry justin deane">Cannolis</td>
+						</tr>					
+						<tr>
+							<td rowspan="3" headers="position">Cannoli Creamer</td>
+							<td headers="name">Darien Jones</td>
+							<td headers="email darien jones">djones@bbincorporated.com</td>
+							<td headers="serviceyears darien jones">23</td>
+							<td headers="salary darien jones">$68,000</td>
+							<td headers="favoritepasta darien jones">Penne</td>
+							<td headers="favoritepastry darien jones">Doughnuts</td>
+						</tr>
+						<tr>
+							<td headers="name">Nathaniel Berg</td>
+							<td headers="email nathaniel berg">nberg@bbincorporated.com</td>
+							<td headers="service nathaniel berg">8</td>
+							<td headers="salary nathaniel berg">$52,000</td>
+							<td headers="favoritepasta nathaniel berg">Shells</td>
+							<td headers="favoritepastry nathaniel berg">Doughnuts</td>
+						</tr>
+						<tr>
+							<td headers="name">Aloysius Lieb</td>
+							<td headers="email wishes lieb">alieb@bbincorporated.com</td>
+							<td headers="service wishes lieb">18</td>
+							<td headers="salary wishes lieb">$62,000</td>
+							<td headers="favoritepasta wishes lieb">Penne</td>
+							<td headers="favoritepastry wishes lieb">Danishes</td>
+							<!-- used wishes instead of aloysius to help with audio reader pronunciation -->
+						</tr>
+						<tr>
+							<td colspan="3">Total Years of Service & Salary</td>
+							<td headers ="years total">80 years</td>
+							<td headers ="salary total">$362k</td>
+						<tr>
+					</tbody>	
+				</table>
+			</figure>	
 		</main>
 		<footer>
 				<br>
-				<nav>
-					<a href="http://webpages.uncc.edu/dhouse1/" target="_blank">Charlotte.edu</a> &sect;
-					<a href="https://github.com/dhouse1UNCC" target="_blank">Github</a> &sect;
-					<a href="https://dhouse1uncc.github.io/" target="_blank">Github.io</a> &sect;
-					<a href="https://dhouse1uncc.github.io/itis3135" target="_blank">ITIS 3135 Github Pages</a> &sect;
-					<a href="#">Codecademy</a> &sect;
-					<a href="https://www.freecodecamp.org/danhouse1" target="_blank">freeCodeCamp</a> &sect;
-					<a href="#">JSFiddle</a> &sect;
-					<a href="https://www.linkedin.com/in/daniel-house-563b0b126/" target="_blank">LinkedIn</a>
-				</nav>
+				<nav class="bottomnav">
+				<a href="http://webpages.uncc.edu/dhouse1/" target="_blank"><button>Charlotte.edu</button></a>
+				<a href="https://github.com/dhouse1UNCC" target="_blank"><button>Github</button></a>
+				<a href="https://dhouse1uncc.github.io/" target="_blank"><button>Github.io</button></a>
+				<a href="https://dhouse1uncc.github.io/itis3135" target="_blank"><button>ITIS 3135 Github Pages</button></a>
+				<a href="#"><button>Codecademy</button></a>
+				<a href="https://www.freecodecamp.org/danhouse1" target="_blank"><button>freeCodeCamp</button></a>
+				<a href="#"><button>JSFiddle</button></a>
+				<a href="https://www.linkedin.com/in/daniel-house-563b0b126/" target="_blank"><button>LinkedIn</button></a>
+			</nav>
 				<p>
 					Page built by Daniel House
 				</p>
@@ -163,3 +185,4 @@
 		</footer>
 	</body>
 </html>
+>
