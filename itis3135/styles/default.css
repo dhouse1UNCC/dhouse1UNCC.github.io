@@ -108,7 +108,7 @@ nav{
 
 nav button{
 	text-decoration: underline;
-	display:block;
+	display:flex;
 	width:100%;
 	background-color: #64E9EE;
 	border-radius: 5%;
