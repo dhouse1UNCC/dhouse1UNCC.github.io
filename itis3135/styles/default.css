@@ -101,23 +101,24 @@ nav{
 	display: flex;
 }
 
-.topnav a{
+.topnav button{
 	flex-basis:25%;
 	display:block;
 }
 
-a button{
+nav button{
+	text-decoration: underline;
 	display:block;
 	width:100%;
 	background-color: #64E9EE;
 	border-radius: 5%;
 	height:150%;
 }
-a button:hover{
+nav button:hover{
 	background-color: #4D6CFA;
 }
 
-.bottomnav a{
+.bottomnav button{
 	flex-basis:12.5%;
 	display:block;
 }

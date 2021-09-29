@@ -10,10 +10,10 @@
 			<h1>ITIS-3135-051 // Daniel House</h1>
 		</header>
 		<nav class ="topnav">
-			<a href="../introduction.htm"><button>Introduction</button></a>
-			<a href="#"><button>Contract</button></a>
-			<a href="../activities/"><button>Activities</button></a>
-			<a href="../website_evaluations.htm"><button>Website Evaluations</button></a>
+			<button type="button" onclick='location.href="../introduction.htm"'>Introduction</button>
+			<button type="button" onclick="#">Contract</button>
+			<button type="button" onclick="location.href='../activities/'">Activities</button>
+			<button type="button" onclick="location.href='../website_evaluations.htm'">Website Evaluations</button>
 		</nav>
 		<main>
 			<h2>Activity 2: HTML Tables</h2>
@@ -33,44 +33,44 @@
 					<tr>
 						<th>Name</th>
 						<th>E-mail</th>
-						<th class="right">Years of Service</th>					
+						<th>Years of Service</th>					
 					</tr>
 				</thead>
 				<tbody>	
 					<tr>
 						<td>Mel Klein</td>
 						<td>mklein@bbincorporated.com</td>
-						<td class="right">2</td>
+						<td>2</td>
 					</tr>
 					<tr>
 						<td>Daniel House</td>
 						<td>dhouse@bbincorporated.com</td>
-						<td class="right">9</td>
+						<td>9</td>
 					</tr>
 					<tr>
 						<td>Lamar House III</td>
 						<td>lhouse@bbincorporated.com</td>
-						<td class="right">0</td>
+						<td>0</td>
 					</tr>					
 					<tr>
 						<td>Justin Deane</td>
 						<td>jdeane@bbincorporated.com</td>
-						<td class="right">8</td>
+						<td>8</td>
 					</tr>					
 					<tr>
 						<td>Darien Jones</td>
 						<td>djones@bbincorporated.com</td>
-						<td class="right">23</td>
+						<td>23</td>
 					</tr> 
 					<tr>
 						<td>Nathaniel Berg</td>
 						<td>nberg@bbincorporated.com</td>
-						<td class="right">8</td>
+						<td>8</td>
 					</tr>
 					<tr>
 						<td>Aloysius Lieb</td>
 						<td>alieb@bbincorporated.com</td>
-						<td class="right">18</td>
+						<td>18</td>
 					</tr>				
 				</tbody>	
 			</table>
@@ -94,87 +94,86 @@
 						<tr>
 							<td headers="position">Pasta Puller</td>
 							<td headers="name">Mel Klein</td>
-							<td headers="email mel klein">mklein@bbincorporated.com</td>
-							<td headers="service mel klein">2</td>
-							<td headers="salary mel klein">$45,000</td>
-							<td headers="favoritepasta mel klein">Angel Hair</td>
-							<td headers="favoritepastry mel klein">Eclairs</td>
+							<td headers="email">mklein@bbincorporated.com</td>
+							<td headers="service">2</td>
+							<td headers="salary">45,000</td>
+							<td headers="favoritepasta">Angel Hair</td>
+							<td headers="favoritepastry">Eclairs</td>
 						</tr>
 						<tr>
 							<td rowspan="3" headers="position">Butter Batterer</td>
 							<td headers="name">Daniel House</td>
-							<td headers="email daniel house">dhouse@bbincorporated.com</td>
-							<td headers="service daniel house">21</td>
-							<td headers="salary daniel house">$52,000</td>
-							<td headers="favoritepasta daniel house">Fettuccine</td>
-							<td headers="favoritepastry daniel house">Apple Pies</td>
+							<td headers="email">dhouse@bbincorporated.com</td>
+							<td headers="service">21</td>
+							<td headers="salary">$52,000</td>
+							<td headers="favoritepasta">Fettuccine</td>
+							<td headers="favoritepastry">Apple Pies</td>
 						</tr>
 						<tr>
 							<td headers="name">Lamar House III</td>
-							<td headers="email lamar house">lhouse@bbincorporated.com</td>
-							<td headers="service lamar house" >0</td>
-							<td headers="salary lamar house">$33,000</td>
-							<td headers="favoritepasta lamar house">Elbow</td>
-							<td headers="favoritepastry lamar house">Eclairs</td>
+							<td headers="email">lhouse@bbincorporated.com</td>
+							<td headers="service" >0</td>
+							<td headers="salary">$33,000</td>
+							<td headers="favoritepasta">Elbow</td>
+							<td headers="favoritepastry">Eclairs</td>
 						</tr>					
 						<tr>
 							<td headers="name">Justin Deane</td>
-							<td headers="email justin deane">jdeane@bbincorporated.com</td>
-							<td headers="service justin deane">8</td>
-							<td headers="salary justin deane">$50,000</td>
-							<td headers="favoritepasta justin deane">Raviolis</td>
-							<td headers="favoritepastry justin deane">Cannolis</td>
+							<td headers="email">jdeane@bbincorporated.com</td>
+							<td headers="service">8</td>
+							<td headers="salary">$50,000</td>
+							<td headers="favoritepasta">Raviolis</td>
+							<td headers="favoritepastry">Cannolis</td>
 						</tr>					
 						<tr>
 							<td rowspan="3" headers="position">Cannoli Creamer</td>
 							<td headers="name">Darien Jones</td>
-							<td headers="email darien jones">djones@bbincorporated.com</td>
-							<td headers="serviceyears darien jones">23</td>
-							<td headers="salary darien jones">$68,000</td>
-							<td headers="favoritepasta darien jones">Penne</td>
-							<td headers="favoritepastry darien jones">Doughnuts</td>
+							<td headers="email">djones@bbincorporated.com</td>
+							<td headers="serviceyears">23</td>
+							<td headers="salary">$68,000</td>
+							<td headers="favoritepasta">Penne</td>
+							<td headers="favoritepastry">Doughnuts</td>
 						</tr>
 						<tr>
 							<td headers="name">Nathaniel Berg</td>
-							<td headers="email nathaniel berg">nberg@bbincorporated.com</td>
-							<td headers="service nathaniel berg">8</td>
-							<td headers="salary nathaniel berg">$52,000</td>
-							<td headers="favoritepasta nathaniel berg">Shells</td>
-							<td headers="favoritepastry nathaniel berg">Doughnuts</td>
+							<td headers="email">nberg@bbincorporated.com</td>
+							<td headers="service">8</td>
+							<td headers="salary">$52,000</td>
+							<td headers="favoritepasta">Shells</td>
+							<td headers="favoritepastry">Doughnuts</td>
 						</tr>
 						<tr>
 							<td headers="name">Aloysius Lieb</td>
-							<td headers="email wishes lieb">alieb@bbincorporated.com</td>
-							<td headers="service wishes lieb">18</td>
-							<td headers="salary wishes lieb">$62,000</td>
-							<td headers="favoritepasta wishes lieb">Penne</td>
-							<td headers="favoritepastry wishes lieb">Danishes</td>
+							<td headers="email">alieb@bbincorporated.com</td>
+							<td headers="service">18</td>
+							<td headers="salary">$62,000</td>
+							<td headers="favoritepasta">Penne</td>
+							<td headers="favoritepastry">Danishes</td>
 							<!-- used wishes instead of aloysius to help with audio reader pronunciation -->
 						</tr>
 						<tr>
 							<td colspan="3">Total Years of Service & Salary</td>
 							<td headers ="years total">80 years</td>
 							<td headers ="salary total">$362k</td>
+							<td></td><td></td>
 						<tr>
 					</tbody>	
 				</table>
 			</figure>	
 		</main>
 		<footer>
-				<br>
-				<nav class="bottomnav">
-				<a href="http://webpages.uncc.edu/dhouse1/" target="_blank"><button>Charlotte.edu</button></a>
-				<a href="https://github.com/dhouse1UNCC" target="_blank"><button>Github</button></a>
-				<a href="https://dhouse1uncc.github.io/" target="_blank"><button>Github.io</button></a>
-				<a href="https://dhouse1uncc.github.io/itis3135" target="_blank"><button>ITIS 3135 Github Pages</button></a>
-				<a href="#"><button>Codecademy</button></a>
-				<a href="https://www.freecodecamp.org/danhouse1" target="_blank"><button>freeCodeCamp</button></a>
-				<a href="#"><button>JSFiddle</button></a>
-				<a href="https://www.linkedin.com/in/daniel-house-563b0b126/" target="_blank"><button>LinkedIn</button></a>
+			<br>
+			<nav class="bottomnav">
+				<button type="button" onclick='window.open("http://webpages.uncc.edu/dhouse1/", "_blank")'>Charlotte.edu</button>
+				<button type="button" onclick='window.open("https://github.com/dhouse1UNCC", "_blank")'>Github</button></a>
+				<button type="button" onclick='window.open("https://dhouse1uncc.github.io/", "_blank")'>Github.io</button>
+				<button type="button" onclick='window.open("https://dhouse1uncc.github.io/itis3135", "_blank")'>ITIS 3135 Github Pages</button>
+				<button type="button">Codecademy</button>
+				<button type="button" onclick='window.open("https://www.freecodecamp.org/danhouse1", "_blank")'>freeCodeCamp</button>
+				<button type="button">JSFiddle</button>
+				<button type="button" onclick='window.open("https://www.linkedin.com/in/daniel-house-563b0b126/", "_blank")'>LinkedIn</button>
 			</nav>
-				<p>
-					Page built by Daniel House
-				</p>
+			<p>Page built by Daniel House</p>
 				<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhouse1uncc.github.io%2Fitis3135%2FActivities%2Ftables.htm" target="_blank">
 					<img src="../images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
 				</a>
@@ -185,4 +184,3 @@
 		</footer>
 	</body>
 </html>
->
