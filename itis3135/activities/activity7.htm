@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="../styles/default.css" rel="stylesheet" type="text/css">
+		<script src="../scripts/calculator.js"></script>
 		<title>ITIS-3135-051 -- Daniel House, Activity 7</title>
 	</head>
 	<body>
@@ -17,6 +18,31 @@
 		</nav>
 		<main>
 			<h2>Activity 7: Calculator</h2>
+			<p>There is no second calculator page, I was able to get this one working without the fcc tutorial.</p>
+			<div class= "display">
+				<div class ="numbers" id="display">0</div>
+				<div class="operator" id="operator"></div>
+			</div>
+			<div class="calculator">
+				<button onclick="setOperator('+')">+</button>
+				<button onclick="setOperator('-')">-</button>
+				<button onclick="setOperator('*')">*</button>
+				<button onclick="setOperator('/')">/</button>
+				<button onclick="pushNum(7)">7</button>
+				<button onclick="pushNum(8)">8</button>
+				<button onclick="pushNum(9)">9</button>
+				<button onclick="calculate()">=</button>
+				<button onclick="pushNum(4)">4</button>
+				<button onclick="pushNum(5)">5</button>
+				<button onclick="pushNum(6)">6</button>
+				<button onclick="pushNum(1)">1</button>
+				<button onclick="pushNum(2)">2</button>
+				<button onclick="pushNum(3)">3</button>
+				<button onclick="makeFloat()">.</button>
+				<button onclick="pushNum(0)">0</button>
+				<button onclick="clearValues()">AC</button>
+			</div>
+			<div class="hidden" id="calculatorholder"></div>
 		</main>
 		<footer>
 			<br>
@@ -31,10 +57,10 @@
 				<button type="button" onclick='window.open("https://www.linkedin.com/in/daniel-house-563b0b126/", "_blank")'>LinkedIn</button>
 			</nav>
 				<p>Page built by Daniel House</p>
-				<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhouse1uncc.github.io%2Fitis3135%2FActivities%2F" target="_blank">
+				<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhouse1uncc.github.io%2Fitis3135%2Factivities%2Factivity7.htm" target="_blank">
 					<img src="../images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
 				</a>
-				<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhouse1uncc.github.io%2Fitis3135%2FActivities%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+				<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhouse1uncc.github.io%2Fitis3135%2Factivities%2Factivity7.htm&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
 					<img src="../images/vcss.gif" width="88" height="31" alt="Link to CSS validator">
 				</a>
 				
