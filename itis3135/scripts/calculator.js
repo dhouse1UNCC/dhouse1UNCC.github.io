@@ -4,10 +4,13 @@ function setOperator(symbol){
 	moveNumber(number);
 }
 
+//Updates display
 function currentDisplay(next){
 	var current = document.getElementById("display").innerHTML;
-	if(parseFloat(current) != 0 && current!="0."){
+	//if whats currently showing is not 0 or if it is a new decimal
+	if(parseFloat(current) != 0 || current.includes("0.")){
 		current = current + next;
+	//else we need to start a new number
 	}else{
 		current = next;
 	}	
@@ -50,8 +53,8 @@ function moveNumber(number){
 
 function calculate(){
 	var operation = document.getElementById("operator").innerHTML;
-	var num1 = document.getElementById("display").innerHTML;
-	var num2 = document.getElementById("calculatorholder").innerHTML;
+	var num1 = document.getElementById("calculatorholder").innerHTML;
+	var num2 = document.getElementById("display").innerHTML;
 	var result = 0;
 	
 	if(needFloat){
@@ -68,8 +71,14 @@ function calculate(){
 		case "+": result = num1 + num2; break;
 		case "-": result = num1 - num2; break;
 		case "*": result = num1 * num2; break;
-		case "/": result = num1 / num2; break;
-		default: result = num1;
+		case "/": 
+			if(parseFloat(num1)=== parseFloat(0)){
+				result = 0;
+			} else{
+				result = num1 / num2;
+			} 
+			break;
+		default: result = num2;
 	}
 	document.getElementById("display").innerHTML = String(result);
 	document.getElementById("operator").innerHTML = "";
