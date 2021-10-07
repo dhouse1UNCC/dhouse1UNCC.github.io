@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="../styles/default.css" rel="stylesheet" type="text/css">
-		<title>ITIS-3135-051 -- Daniel House, Activity Index</title>
+		<script src="../scripts/salary.js"></script>
+		<title>ITIS-3135-051 -- Daniel House, Activity 8</title>
 	</head>
 	<body>
 		<header>
@@ -16,18 +17,17 @@
 			<button type="button" onclick="location.href='../website_evaluations.htm'">Website Evaluations</button>
 		</nav>
 		<main>
-			<h2>Activities</h2>
-				<ul>
-					<li> <a href="tables.htm"> Activity 2: HTML Tables</a> </li> 
-					<li> <a href="activity3.htm"> Activity 3: HTML Form Submission</a></li>
-					<li> <a href="brand-dire-hobgoblin.htm"> Activity 4: Your Whimsical Brand</a></li>
-					<li> <a href="../stuff/My Super duper & Crappy Page.html">Crappy Webpage</a></li>
-					<li> <a href="first-scripts.htm">Activity 5: Simple Web-based Interaction</a></li>
-					<li> <a href="activity6.htm">Activity 6: Name That Polygon</a></li>
-					<li> <a href="activity7.htm">Activity 7: Calculator</a></li>
-					<li> <a href="activity8.htm">Activity 8: Arrays</a></li>
-				</ul>
-			
+			<h2>Activity 8: Arrays</h2>
+			<div id="salaryui">
+				<h3>Salary Display</h3>
+				<div id="results"></div>
+				<label for ="name">Name:<input type="text" id="name" required></label>
+				<label for ="salary">Salary:<input type="text" id="salary" required></label><br>
+				<button type="button" onclick="addSalary()">Submit</button>
+				<button type="button" onclick="displaySalaries()">Display All</button>
+				<button type="button" onclick="displayResults()">See salary info</button>
+				<div id="results_table"></div>
+			</div>
 		</main>
 		<footer>
 			<br>
@@ -42,25 +42,13 @@
 				<button type="button" onclick='window.open("https://www.linkedin.com/in/daniel-house-563b0b126/", "_blank")'>LinkedIn</button>
 			</nav>
 				<p>Page built by Daniel House</p>
-				<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdhouse1uncc.github.io%2Fitis3135%2Factivities" target="_blank">
+				<a href="#" target="_blank">
 					<img src="../images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
 				</a>
-				<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdhouse1uncc.github.io%2Fitis3135%2Factivities%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+				<a href="#" target="_blank">
 					<img src="../images/vcss.gif" width="88" height="31" alt="Link to CSS validator">
 				</a>
 				
 		</footer>
 	</body>
 </html>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

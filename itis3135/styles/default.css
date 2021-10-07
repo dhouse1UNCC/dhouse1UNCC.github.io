@@ -177,3 +177,28 @@ nav button:hover{
 	order:2;
 	margin-right:.5em;
 }
+
+#salaryui{
+	border: 3px solid #4D6CFA;
+	grid:
+}
+
+#salaryui label{
+	display:flex;
+	float:left;
+}
+
+#salaryui #results_table{
+	display:flex;
+}
+
+#salaryui #results{
+	float:top-right;
+	display:flex;
+	flex:right;
+	text-align:left;
+}
+
+#salaryui #results h2{
+	font-size: 1em;
+}
