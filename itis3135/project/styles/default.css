@@ -1,0 +1,111 @@
+#topnavigation{
+	display:flex;
+	font-size: 32px;
+}
+
+#topnavigation button{
+	flex-basis:25%;
+}
+
+
+#photogallery{
+	display:grid;
+	grid-template:
+	"a a a a b b c" 15em
+	"a a a a b b d" 15em
+	"a a a a b b e" 15em
+	"a a a a b b f" 15em / auto auto auto auto auto auto;
+	background-color: blue;
+}
+#photogallery #currentphoto{
+	background-color:green;
+	grid-column:1/span 4;
+	grid-row:1/span4;
+}
+#photogallery #currentphotoinfo{
+	background-color:white;
+	grid-column:5/span 2;
+	grid-row:1/span 4;
+}
+#photogallery .preview{
+	border: 3px dotted black;
+	
+}
+#photogallery button{
+	height:15%;
+	width:10%;
+	background-color: white;
+	opacity:45%;
+	margin-top:42.5%;	
+}
+#photogallery button:hover{
+	opacity:75%;
+	height: 20%;
+	width: 15%;
+	margin-top:40%;
+}
+#photogallery #rightbutton{
+	float:right;
+	margin-left:10px;
+}
+#photogallery .preview button{
+	float: center;
+	width: 25%;
+	height: 15%;
+	margin-top:0%;
+	margin-left: 40%;
+}
+
+#photogallery .preview button:hover{
+	float: center;
+	width: 35%;
+	height: 22.5%;
+	margin-left: 40%;
+}
+
+#preview4 #bottombutton{
+	margin-top:15em;
+}
+#preview4 #bottombutton:hover{
+	margin-top:14em;
+}
+body{
+	background-color: brown;
+}
+header{
+	background-color:green;
+}
+footer{
+	background-color:gray;
+	}
+h1{
+	text-align:center;
+	font-size: 3em;
+}
+
+#journal{
+	display:grid;
+	background-color: blue;
+	gap:.1em;
+	}
+	
+#journal .entry{
+	display:grid;
+	gap:.2em;
+	grid-template:
+	"a b" 2em
+	"c d" auto/ 10% 90%;
+	background-color: green;
+	margin: 0px 0px 0px .2em;
+}
+		
+#journal .jline div{ 
+	width:.5em;
+	height:95%;
+	border-right: thick solid black;
+	right: 2em;
+}
+
+#journal .entry div{
+	background-color: white;
+}
