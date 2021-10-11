@@ -180,7 +180,6 @@ nav button:hover{
 
 #salaryui{
 	border: 3px solid #4D6CFA;
-	grid:
 }
 
 #salaryui label{
@@ -193,9 +192,7 @@ nav button:hover{
 }
 
 #salaryui #results{
-	float:top-right;
 	display:flex;
-	flex:right;
 	text-align:left;
 }
 
