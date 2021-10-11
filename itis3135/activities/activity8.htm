@@ -6,7 +6,7 @@
 		<script src="../scripts/salary.js"></script>
 		<title>ITIS-3135-051 -- Daniel House, Activity 8</title>
 	</head>
-	<body>
+	<body onload="fillDropbox()">
 		<header>
 			<h1>ITIS-3135-051 // Daniel House</h1>
 		</header>
@@ -21,8 +21,9 @@
 			<div id="salaryui">
 				<h3>Salary Display</h3>
 				<div id="results"></div>
-				<label for ="name">Name:<input type="text" id="name" required></label>
-				<label for ="salary">Salary:<input type="text" id="salary" required></label><br>
+				<label for ="names">Name:</label>
+				<select name="names" id="names"></select><br>
+				<label for ="salary">Salary:<input type="text" id="salary"></label><br>
 				<button type="button" onclick="addSalary()">Submit</button>
 				<button type="button" onclick="displaySalaries()">Display All</button>
 				<button type="button" onclick="displayResults()">See salary info</button>
