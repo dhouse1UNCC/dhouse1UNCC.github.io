@@ -1,34 +1,85 @@
 $(document).ready(function() {
 
-
-		var pics=[
-			'Activity10_thumbnails/t1.jpg',
-			'Activity10_thumbnails/t2.jpg',
-			'Activity10_thumbnails/t3.jpg',
-			'Activity10_thumbnails/t4.jpg',
-			'Activity10_thumbnails/t5.jpg',
-			'Activity10_thumbnails/t6.jpg',
-			'Activity10_images/h1.jpg',
-			'Activity10_images/h2.jpg',
-			'Activity10_images/h3.jpg',
-			'Activity10_images/h4.jpg',
-			'Activity10_images/h5.jpg',
-			'Activity10_images/h6.jpg',
-		];
+	 // preload the image for each link
+	var image, imagecounter=1, imageCache=[];
+	$('#image_list img').each(function(){
+		image = new Image();
+		let url ="./Activity10_images/h" + imagecounter +".jpg";
+		image.src= url;
+		image.title = $(this).attr('alt');
+		imageCache[imagecounter-1] = image;
+		imagecounter++;
+	});
 		
-        // preload the image for each link
-		var $imgs= new Array();
-		for(var i=0; i<pics.length-1; i++){
-			$imgs.push($('<img>').attr('src', pics[i]));
-		}
+    // set up the event handlers for each link
+	const pic1 = document.getElementById("#pic1");
+	const pic2 = document.getElementById("#pic2");
+	const pic3 = document.getElementById("#pic3");
+	const pic4 = document.getElementById("#pic4");
+	const pic5 = document.getElementById("#pic5");
+	const pic6 = document.getElementById("#pic6");
 		
-        // set up the event handlers for each link
-		const pic1 = document.querySelector('')
-    			// get the image URL and caption for each image and animate the caption
+    // get the image URL and caption for each image and animate the caption
+	$('#pic1').click(function(event){
+		event.preventDefault();
+		$('.vanish').fadeOut(3000, 
+			function(){
+				var nextImage =imageCache[0];
+				$('#current_image').attr('src',nextImage.src).fadeIn(3000);
+				$('#caption').text(nextImage.title).fadeIn(3000);
+			});
+	});
+	
+	$('#pic2').click(function(event){
+		event.preventDefault();
+		$('.vanish').fadeOut(3000, 
+			function(){
+				var nextImage =imageCache[1];
+				$('#current_image').attr('src',nextImage.src).fadeIn(3000);
+				$('#caption').text(nextImage.title).fadeIn(3000);
+			});
+	});
+	
+	$('#pic3').click(function(event){
+		event.preventDefault();
+		$('.vanish').fadeOut(3000, 
+			function(){
+				var nextImage =imageCache[2];
+				$('#current_image').attr('src',nextImage.src).fadeIn(3000);
+				$('#caption').text(nextImage.title).fadeIn(3000);
+			});
+	});
+	$('#pic4').click(function(event){
+		event.preventDefault();
+		$('.vanish').fadeOut(3000, 
+			function(){
+				var nextImage =imageCache[3];
+				$('#current_image').attr('src',nextImage.src).fadeIn(3000);
+				$('#caption').text(nextImage.title).fadeIn(3000);
+			});
+	});
 
-            // cancel the default action of each link
+$('#pic5').click(function(event){
+		event.preventDefault();
+		$('.vanish').fadeOut(3000, 
+			function(){
+				var nextImage =imageCache[4];
+				$('#current_image').attr('src',nextImage.src).fadeIn(3000);
+				$('#caption').text(nextImage.title).fadeIn(3000);
+			});
+	});
+
+$('#pic6').click(function(event){
+		event.preventDefault();
+		$('.vanish').fadeOut(3000, 
+			function(){
+				var nextImage =imageCache[5];
+				$('#current_image').attr('src',nextImage.src).fadeIn(3000);
+				$('#caption').text(nextImage.title).fadeIn(3000);
+			});
+	});
 
 
     // move the focus to the first link
-
+	document.getElementById('pic1').focus();
 }); // end ready
