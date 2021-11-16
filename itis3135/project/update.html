@@ -1,0 +1,55 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href="styles/default.css" rel="stylesheet" type="text/css">
+		<script src='update.js'></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<title>Pot-T, Update Page</title>
+	</head>
+	<body>
+		<header>
+			<h1><a href="./index.html">The Amazing Pot T</a></h1>
+		</header>
+		<nav id="topnavigation">
+			<button type="button" onclick="location.href='./comparison.html'">Why Pot-T</button>
+			<button type="button" onclick="location.href='./gallery.html'">Gallery</button>
+			<button type="button" onclick="location.href='./doit.html'">Do It</button>
+			<button type="button" onclick="location.href='./journal.html'">Design Journal</button>
+			<button type="button" onclick="location.href='./aboutus.html'">About Us</button>
+		</nav>
+		<main>
+			<div id='update_buttons'>
+				<button id="comparison_button" type='button' onclick="">Comparison</button>
+				<button id="image_button" type='button' onclick="">Image</button>
+				<button id='journal_button'type='button' onclick="">Journal</button>
+				
+			</div>	
+			<div id="update_journal">
+				<label for="journal_title">Title<input id='journal_title' type='text'></label>
+				<label for ='content'>Content<input id='journal_content' type='text'></label>
+				<button type='submit' onclick='update_journal()'>Submit</button>
+			</div>
+			<div id="update_picture">
+				<label for='picture_title'>Title:</label>
+				<input id='picture_title'>
+				<label for='picture_image'>Select Image</label>
+				
+				<!-- Information on this function found here https://www.w3schools.com/tags/att_input_accept.asp --->
+				<input type='file' id='picture_image' accept='image/*'>
+			</div>
+			<div id="update_comparison">
+				<label for='comparison_name'>Name of Product</label>
+				<label for='comparison_description'>Description of Product</label>
+				<div id="comparison_pro">
+				</div>
+				<div id='comparison_con'>
+				</div>
+			</div>
+		</main>
+	</body>
+	<footer>
+		<nav id="bottomnav">
+			<a>Top of Page</a>
+		</nav>
+	</footer>
+</html>
