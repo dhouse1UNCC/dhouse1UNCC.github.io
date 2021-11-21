@@ -145,7 +145,6 @@ main{
 /*CSS for Journal Page Starts Here*/
 #journal{
 	display:grid;
-	background-color: blue;
 	gap:.1em;
 	}
 	
@@ -155,7 +154,6 @@ main{
 	grid-template:
 	"a b" 2em
 	"c d" auto/ 10% 90%;
-	background-color: green;
 	margin: 0px 0px 0px .2em;
 }
 		
@@ -164,10 +162,31 @@ main{
 	height:95%;
 	border-right: thick solid black;
 	right: 2em;
+	margin-top: .4em;
 }
 
-#journal .entry div{
+#journal .jline{ 
+	border-right: thick solid black;
+	margin-bottom: .5em;
+}
+#journal .entry h3{
+	padding-bottom:1em;
+}
+#journal .entry h3:nth-child(2){
+	padding-bottom:1em;
+	border-bottom: thick solid black;
+}
+#journal .entry h3:nth-child(1){
+	border-right: thick solid black;
+}
+
+
+#journal .entry{
 	background-color: white;
+}
+
+#journal .entry p{
+	padding-top: .5em;
 }
 
 /*CSS for the the navigation map on the journal page starts here*/
