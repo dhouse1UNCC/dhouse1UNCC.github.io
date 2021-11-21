@@ -34,6 +34,7 @@ h2{
 }
 main{
 	background-color:white;
+	margin-top: 1em;
 }
 .picplaceholder{
 	background-color:gray;
@@ -277,3 +278,33 @@ main{
 }
 
 /*CSS for Do It Page ends here*/
+
+/*CSS for Update Page starts here*/
+#update_buttons{
+	display:flex;
+	width=100%;
+}
+#update_buttons button{
+	flex-basis:33.333%;
+	height:2em;
+}
+
+#update_journal{
+	display: none;
+}
+#update_picture{
+	display:none;
+}
+.update_ui{
+	border: .1em solid black;
+	padding:2em 1em 2em 4em;
+}
+.update_ui input, .update_ui textarea{
+	margin-bottom: 1em;
+}
+
+#password{
+	height:2em;
+}
+
+/*CSS for Update Page ends here*/

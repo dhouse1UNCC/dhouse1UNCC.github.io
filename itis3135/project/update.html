@@ -2,8 +2,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="styles/default.css" rel="stylesheet" type="text/css">
-		<script src='update.js'></script>
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src='scripts/update.js'></script>
 		<title>Pot-T, Update Page</title>
 	</head>
 	<body>
@@ -24,27 +24,49 @@
 				<button id='journal_button'type='button' onclick="">Journal</button>
 				
 			</div>	
-			<div id="update_journal">
-				<label for="journal_title">Title<input id='journal_title' type='text'></label>
-				<label for ='content'>Content<input id='journal_content' type='text'></label>
-				<button type='submit' onclick='update_journal()'>Submit</button>
+			<div id="update_journal" class='update_ui'>
+				<h2>Update Journal</h2>
+				<label for="journal_title">Journal Title:<input id='journal_title' type='text'></label><br>
+				<label for ='content'>Journal Content</label><br>
+				<textarea id='journal_content'></textarea><br>
+				<button type='submit' onclick='update_journal()'>Submit Journal</button>
 			</div>
-			<div id="update_picture">
-				<label for='picture_title'>Title:</label>
-				<input id='picture_title'>
+			<div id="update_picture" class='update_ui'>
+				<h2>Update  Picture</h2>
+				<label for='picture_title'>Picture Title:</label>
+				<input id='picture_title'><br>
+				<label for='picture_description'>Picture Description</label><br>
+				<textarea for='picture_description'></textarea><br>
 				<label for='picture_image'>Select Image</label>
 				
 				<!-- Information on this function found here https://www.w3schools.com/tags/att_input_accept.asp --->
-				<input type='file' id='picture_image' accept='image/*'>
+				<input type='file' id='picture_image' accept='image/*'><br>
+				<button type='submit' id='submit_picture'>Submit Image</button>
 			</div>
-			<div id="update_comparison">
-				<label for='comparison_name'>Name of Product</label>
-				<label for='comparison_description'>Description of Product</label>
-				<div id="comparison_pro">
+			<div id="update_comparison" class='update_ui'>
+				<h2>Update Comparison</h2>
+				<label for='comparison_name'>Name of Product:</label>
+				<input type='text' id='comparison_name'><br>
+				<label for='comparison_description'>Description of Product</label><br>
+				<textarea id='comparison_description'></textarea><br>
+				<label for='comparison_photo'>Product Picture</label>
+				<input id='comparison_photo' type='file' accept='image/*'>
+				<div id='pro_ui'>
+					<ul id="comparison_pro">Pros
+						<li><input type='text' id='pro0' value="None"></li>
+					</ul>
+					<button type='button' id='add_pro'>Add Pro</button>
 				</div>
-				<div id='comparison_con'>
+				<div id='con_ui'>
+					<ul id='comparison_con'>Cons
+						<li><input type='text' id='con0' value="None"></li>
+					</ul>
+					<button type='button' id='add_con'>Add Con</button>
 				</div>
+				<button type="submit" id='submit_comparison'>Submit Comparison</button>
 			</div>
+			<label for='password'>Github Password to Update Page</label>
+			<input id ='password' value='password'>
 		</main>
 	</body>
 	<footer>
