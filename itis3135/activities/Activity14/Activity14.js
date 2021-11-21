@@ -7,7 +7,7 @@ $(document).ready(function() {
 		alert(jsonName);
 		$.ajax({
 			type: "get",
-			url: jsonName + ".json",
+			url: "json_files/" + jsonName + ".json",
 			beforeSend: function() {
 				$("#team").html("Loading...");
 			},
