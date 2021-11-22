@@ -1,13 +1,24 @@
 {"products":[
 	{
-		"name": "December",
-		"description": "Fossil Threads in the Web of Life",
+		"name": "Natures Head 2",
+		"description": "This is a toilet joke",
 		"cons":[
-			{"content":}
+			{"con": "N/A"}
 		],
 		"pros":[
-			{"content":}
+			{"pro": "N/A"}
 		],
-		"image": "",
+		"image": ""
+	},
+	{
+		"name": "Natures Head 2",
+		"description": "Fossil Threads in the Web of Life",
+		"cons":[
+			{"con":}
+		],
+		"pros":[
+			{"pro":}
+		],
+		"image": ""
 	}
 ]}
