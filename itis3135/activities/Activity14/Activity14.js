@@ -4,7 +4,6 @@ $(document).ready(function() {
 	$("a").click(function(event){
 		event.preventDefault();
 		jsonName = $(this).attr("title");
-		alert(jsonName);
 		$.ajax({
 			type: "get",
 			url: "json_files/" + jsonName + ".json",
