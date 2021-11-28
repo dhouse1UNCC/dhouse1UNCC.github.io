@@ -44,6 +44,13 @@ main{
 	margin-right:3em;
 	margin-left:2em;
 }
+header a img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width:15%;
+	height:auto;
+}
 /*CSS for Index starts here*/
 #homepage{
 	font-size:1.5em;
