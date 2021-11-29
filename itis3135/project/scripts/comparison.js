@@ -23,8 +23,8 @@ $(document).ready(function() {
 	});
 	*/
 	alert();
-	$("#comparisonnav button").onclick(function(){
-		var buttonName = this.text();
+	$("#comparisonnav button").click(function(){
+		var buttonName = $(this).text();
 		alert(buttonName);
 		$.ajax({
 			type: "get",
