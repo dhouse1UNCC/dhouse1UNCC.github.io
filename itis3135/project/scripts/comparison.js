@@ -22,7 +22,7 @@ $(document).ready(function() {
 		}
 	});
 	*/
-	
+	alert();
 	$("#comparisonnav button").click(function(){
 		var buttonName = this.text();
 		alert(buttonName);
