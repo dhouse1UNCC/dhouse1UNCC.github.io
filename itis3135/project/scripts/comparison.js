@@ -25,6 +25,8 @@ $(document).ready(function() {
 	//set  up journal slider
 	
 	$("#comparisonnav button").click(function(){
+		var buttonName = this.text();
+		alert(buttonName);
 		$.ajax({
 			type: "get",
 			url: "json/journal.json",
@@ -39,10 +41,10 @@ $(document).ready(function() {
 			success: function(data) {
 				$("#comparisontext").html("");
 				$("#comparisonpicture").html("");
-				$.each(data, function() {
+				matchingData = JSON['data'].filter(function(x){ return x.name == buttonName});
+				$.each(matchingData, function() {
 					$.each(this, function(key, value) {
 						var pro_json = value.pros;
-						alert(pro_json);
 						var con_json = value.cons;
 						$("#comparisontext").append(
 							"<h2>" + value.name+ "</h2>" +
