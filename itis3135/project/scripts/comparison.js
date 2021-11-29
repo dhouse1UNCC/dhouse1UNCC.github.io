@@ -30,7 +30,7 @@ $(document).ready(function() {
 			type: "get",
 			url: "json/comparison.json",
 			beforeSend: function() {
-				$("#comparison").html("Loading...");
+				$("#comparisontext").html("Loading...");
 			},
 			timeout: 10000,
 			error: function(xhr, status, error) {
