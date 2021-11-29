@@ -44,8 +44,6 @@ $(document).ready(function() {
 				matchingData = JSON['data'].filter(function(x){ return x.name == buttonName});
 				$.each(matchingData, function() {
 					$.each(this, function(key, value) {
-						var pro_json = value.pros;
-						var con_json = value.cons;
 						$("#comparisontext").append(
 							"<h2>" + value.name+ "</h2>" +
 							"<p>" + value.description + "</p>"
