@@ -40,7 +40,7 @@ $(document).ready(function() {
 			success: function(data) {
 				$("#comparisontext").html("");
 				$("#comparisonpicture").html("");
-				matchingData = JSON['data'].filter(function(x){ return x.name == buttonName});
+				var matchingData = JSON['data'].filter(function(x){ return x.name == buttonName});
 				$.each(matchingData, function() {
 					$.each(this, function(key, value) {
 						$("#comparisontext").append(
