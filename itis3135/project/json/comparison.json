@@ -2,100 +2,46 @@
 	{
 		"name": "Natures Head 2",
 		"description": "This is a toilet joke",
-		"cons":[
-			{"con": "N/A"}
-		],
-		"pros":[
-			{"pro": "N/A"}
-		],
 		"image": ""
 	},
 	{
 		"name": "Airhead",
 		"description": "Fossil Threads in the Web of Life",
-		"cons":[
-			{"con":}
-		],
-		"pros":[
-			{"pro":}
-		],
 		"image": ""
 	},
 	{
 		"name": "C-Head",
 		"description": "Fossil Threads in the Web of Life",
-		"cons":[
-			{"con":}
-		],
-		"pros":[
-			{"pro":}
-		],
 		"image": ""
 	},
 	{
 		"name": "Squatty Potty",
 		"description": "Fossil Threads in the Web of Life",
-		"cons":[
-			{"con":}
-		],
-		"pros":[
-			{"pro":}
-		],
 		"image": ""
 	},
 	{
 		"name": "Lovable Loo",
 		"description": "Fossil Threads in the Web of Life",
-		"cons":[
-			{"con":}
-		],
-		"pros":[
-			{"pro":}
-		],
 		"image": ""
 	},
 	{
 		"name": "Separat",
 		"description": "Fossil Threads in the Web of Life",
-		"cons":[
-			{"con":}
-		],
-		"pros":[
-			{"pro":}
-		],
 		"image": ""
 	},
 	{
 		"name": "Super Cheap Seat On Bucket",
 		"description": "Fossil Threads in the Web of Life",
-		"cons":[
-			{"con":}
-		],
-		"pros":[
-			{"pro":}
-		],
 		"image": ""
 	},
 	{
 		"name": "Nicer Seat on Bucket",
 		"description": "Fossil Threads in the Web of Life",
-		"cons":[
-			{"con":}
-		],
-		"pros":[
-			{"pro":}
-		],
 		"image": ""
 	},
 	{
 		"name": "Thetford",
 		"description": "Fossil Threads in the Web of Life",
-		"cons":[
-			{"con":}
-		],
-		"pros":[
-			{"pro":}
-		],
 		"image": ""
 	}
 ]}
