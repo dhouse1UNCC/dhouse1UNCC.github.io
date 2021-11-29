@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	$.ajax({
+	/*$.ajax({
 		type: "get",
-		url: "json/journal.json",
+		url: "json/comparison.json",
 		beforeSend: function() {
-			$("main").html("Loading...");
+			$("#comparisonnav").html("Loading...");
 		},
 		timeout: 10000,
 		error: function(xhr, status, error) {
@@ -21,17 +21,16 @@ $(document).ready(function() {
 			});
 		}
 	});
-	
-	//set  up journal slider
+	*/
 	
 	$("#comparisonnav button").click(function(){
 		var buttonName = this.text();
 		alert(buttonName);
 		$.ajax({
 			type: "get",
-			url: "json/journal.json",
+			url: "json/comparison.json",
 			beforeSend: function() {
-				$("comparison").html("Loading...");
+				$("#comparison").html("Loading...");
 			},
 			timeout: 10000,
 			error: function(xhr, status, error) {
