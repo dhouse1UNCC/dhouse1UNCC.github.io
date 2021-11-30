@@ -1,26 +1,27 @@
-$(document).ready(function() {
-	var currentEntry = 0;
+var currentEntry = 0;
 	
-	function showEntry(entry){
-		var textName = "text" + entry;
-		var picName = "picture" + entry;
-		var currentText = 'text' + currentEntry;
-		var currentPic = "picture" + currentEntry;
+function showEntry(entry){
+	var textName = "text" + entry;
+	var picName = "picture" + entry;
+	var currentText = 'text' + currentEntry;
+	var currentPic = "picture" + currentEntry;	
 		
-		alert(textName + picName + currentText +currentPic);
-		var oldTextElement = document.getElementById(currentText);
-		var oldPicElement = document.getElementById(currentPic);
-		var newTextElement = document.getElementById(textName);
-		var newPicElement = document.getElementById(picName);
+	alert(textName + picName + currentText +currentPic);
+	var oldTextElement = document.getElementById(currentText);
+	var oldPicElement = document.getElementById(currentPic);
+	var newTextElement = document.getElementById(textName);
+	var newPicElement = document.getElementById(picName);
 		
-		oldTextElement.style.display = "none";
-		oldPicElement.style.display = "none";
-		newTextElement.style.display = "block";
-		newPicElement.style.display = "block";
+	oldTextElement.style.display = "none";
+	oldPicElement.style.display = "none";
+	newTextElement.style.display = "block";
+	newPicElement.style.display = "block";
 		
-		currentEntry = entry;
+	currentEntry = entry;
 	}
 	
+
+$(document).ready(function() {
 	var entryCount = 0;
 	$.ajax({
 		type: "get",
