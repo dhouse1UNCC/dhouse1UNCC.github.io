@@ -1,61 +1,64 @@
 $(document).ready(function() {
-	/*$.ajax({
+	var currentEntry = 0;
+	
+	function showEntry(entry){
+		var textName = "text" + entry;
+		var picName = "picture" + entry;
+		var currentText = 'text' + currentEntry;
+		var currentPic = "picture" + currentEntry;
+		
+		var oldTextElement = document.getElementById(currentText);
+		var oldPicElement = document.getElementById(currentPic);
+		var newTextElement = document.getElementById(textName);
+		var newPicElement = document.getElementById(picName);
+		
+		oldTextElement.style.display = "none";
+		oldPicElement.style.display = "none";
+		newTextElement.style.display = "block";
+		newPicElement.style.display = "block";
+		
+		currentEntry = entry;
+	}
+	
+	var entryCount = 0;
+	$.ajax({
 		type: "get",
 		url: "json/comparison.json",
 		beforeSend: function() {
-			$("#comparisonnav").html("Loading...");
+			$("#comparisontext").html("Loading...");
 		},
 		timeout: 10000,
-		error: function(xhr, status, error) {
+			error: function(xhr, status, error) {
 			alert("Error: " + xhr.status + " - " + error);
 		},
 		dataType: "json",
 		success: function(data) {
-			$("#comparisonnav").html("");
+			$("#comparisontext").html("");
+			$("#comparisonpicture").html("");
 			$.each(data, function() {
 				$.each(this, function(key, value) {
 					$("#comparisonnav").append(
-						"<button>" + value.name+ "</button>"
+						"<button onclick='showEntry(" + entryCount + ")'>"+ value.name +"</button>"
 					);
+					
+					$("#comparisontext").append(
+						"<div id='text" + entryCount +"'>"
+						"<h2>" + value.name+ "</h2>" +
+						"<p>" + value.description + "</p>" +
+						"</div>"
+					);
+						
+					$("#copmarisonpicture").append(
+						"<div id='picture" + entryCount + "'>" +
+						"<img src='" + value.image +"'>" +
+						"</div>"
+					);
+					entryCount++;
 				});
 			});
 		}
 	});
-	*/
-	alert();
-	$("#comparisonnav button").click(function(){
-		var buttonName = $(this).text();
-		alert(buttonName);
-		$.ajax({
-			type: "get",
-			url: "json/comparison.json",
-			beforeSend: function() {
-				$("#comparisontext").html("Loading...");
-			},
-			timeout: 10000,
-			error: function(xhr, status, error) {
-				alert("Error: " + xhr.status + " - " + error);
-			},
-			dataType: "json",
-			success: function(data) {
-				$("#comparisontext").html("");
-				$("#comparisonpicture").html("");
-				var matchingData = JSON['products'].filter(function(x){ return x.name == buttonName});
-				$.each(matchingData, function() {
-					$.each(this, function(key, value) {
-						$("#comparisontext").append(
-							"<h2>" + value.name+ "</h2>" +
-							"<p>" + value.description + "</p>"
-						);
-						
-						$("#copmarisonpicture").append(
-							"<img src='" + value.image +"'>"
-						);
-					});
-				});
-			}
-		});
 	
-	});
+	
 });
 	
