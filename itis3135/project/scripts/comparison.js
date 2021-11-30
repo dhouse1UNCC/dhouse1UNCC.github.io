@@ -42,14 +42,14 @@ $(document).ready(function() {
 					);
 					
 					$("#comparisontext").append(
-						"<div id='text" + entryCount +"'>" +
+						"<div id='text" + entryCount +"' hidden>" +
 						"<h2>" + value.name+ "</h2>" +
 						"<p>" + value.description + "</p>" +
 						"</div>"
 					);
 						
 					$("#copmarisonpicture").append(
-						"<div id='picture" + entryCount + "'>" +
+						"<div id='picture" + entryCount + "' hidden>" +
 						"<img src='" + value.image +"'>" +
 						"</div>"
 					);
