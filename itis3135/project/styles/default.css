@@ -259,7 +259,7 @@ header a img{
 }
 #comparisonpicture{
 	float:right;
-	margin-right: 3em;
+	margin-right: auto;
 	height: auto;
 	width: auto;
 	margin-bottom:1em;
