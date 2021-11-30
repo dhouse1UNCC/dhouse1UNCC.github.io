@@ -43,14 +43,14 @@ $(document).ready(function() {
 					
 					$("#comparisontext").append(
 						"<div id='text" + entryCount +"' hidden>" +
-						"<h2>" + value.name+ "</h2>" +
-						"<p>" + value.description + "</p>" +
+							"<h2>" + value.name+ "</h2>" +
+							"<p>" + value.description + "</p>" +
 						"</div>"
 					);
 						
 					$("#copmarisonpicture").append(
 						"<div id='picture" + entryCount + "' hidden>" +
-						"<img src='" + value.image +"'>" +
+							"<img src='" + value.image +"'>" +
 						"</div>"
 					);
 					entryCount++;
