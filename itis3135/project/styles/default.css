@@ -252,15 +252,15 @@ header a img{
 	height: 2em;
 	
 }
-#comparisontext div{
+#comparisonpicture div{
 	height:auto;
 	width:auto;
 }
 #comparisonpicture{
 	float:right;
 	margin-right: 3em;
-	height: 15em;
-	width: 25em;
+	height: auto;
+	width: auto;
 	background-color:gray;
 	margin-bottom:1em;
 }
