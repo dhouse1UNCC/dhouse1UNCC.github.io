@@ -7,6 +7,7 @@ $(document).ready(function() {
 		var currentText = 'text' + currentEntry;
 		var currentPic = "picture" + currentEntry;
 		
+		alert(textName + picName + currentText +currentPic);
 		var oldTextElement = document.getElementById(currentText);
 		var oldPicElement = document.getElementById(currentPic);
 		var newTextElement = document.getElementById(textName);
