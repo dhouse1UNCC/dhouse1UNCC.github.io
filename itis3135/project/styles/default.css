@@ -255,13 +255,13 @@ header a img{
 #comparisonpicture div{
 	height:auto;
 	width:auto;
+	margin-right:auto;
 }
 #comparisonpicture{
 	float:right;
 	margin-right: 3em;
 	height: auto;
 	width: auto;
-	background-color:gray;
 	margin-bottom:1em;
 }
 #comparison{
