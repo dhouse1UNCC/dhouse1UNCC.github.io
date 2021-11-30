@@ -50,7 +50,7 @@ $(document).ready(function() {
 						"</div>"
 					);
 						
-					$("#copmarisonpicture").append(
+					$("#comparisonpicture").append(
 						"<div id='picture" + entryCount + "' hidden>" +
 							"<img src='" + value.image +"'>" +
 						"</div>"
