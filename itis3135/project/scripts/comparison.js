@@ -42,7 +42,7 @@ $(document).ready(function() {
 					);
 					
 					$("#comparisontext").append(
-						"<div id='text" + entryCount +"'>"
+						"<div id='text" + entryCount +"'>" +
 						"<h2>" + value.name+ "</h2>" +
 						"<p>" + value.description + "</p>" +
 						"</div>"
