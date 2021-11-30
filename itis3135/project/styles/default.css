@@ -266,7 +266,7 @@ header a img{
 }
 #comparison{
 	display:grid;
-	grid-template:"a b" auto/ 75% 25%;
+	grid-template:"a b" auto/ 65% 35%;
 	margin-top: 1em;
 	margin-bottom:1em;
 }
