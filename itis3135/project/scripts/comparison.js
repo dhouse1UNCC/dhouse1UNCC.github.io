@@ -6,7 +6,8 @@ function showEntry(entry){
 	var currentText = 'text' + currentEntry;
 	var currentPic = "picture" + currentEntry;	
 		
-	alert(textName + picName + currentText +currentPic);
+	//alert(textName + picName + currentText +currentPic);
+	
 	var oldTextElement = document.getElementById(currentText);
 	var oldPicElement = document.getElementById(currentPic);
 	var newTextElement = document.getElementById(textName);
@@ -45,7 +46,7 @@ $(document).ready(function() {
 					
 					$("#comparisontext").append(
 						"<div id='text" + entryCount +"' hidden>" +
-							"<h2>" + value.name+ "</h2>" +
+							"<a href ='" + value.link +"'><h2>" + value.name+ "</h2></a>" +
 							"<p>" + value.description + "</p>" +
 						"</div>"
 					);
