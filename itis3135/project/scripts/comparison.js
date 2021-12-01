@@ -61,7 +61,7 @@ $(document).ready(function() {
 						"<div id='text" + entryCount +"' hidden>" +
 							"<a href ='" + value.link +"'><h3>" + value.name+ "</h3></a>" +
 							"<p>" + value.description + "</p>" +
-							prosHTML + consHTML;
+							prosHTML + consHTML +
 						"</div>"
 					);
 						
