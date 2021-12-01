@@ -124,11 +124,10 @@ header a img{
 }
 
 #currentphotobox #currentphoto{
-	position:relative;
 	max-height:100%;
 	max-width:100%;
 	height: auto;
-	height: auto;
+	width: auto;
 }
 #photogallery .preview{
 	border: 3px dotted black;
