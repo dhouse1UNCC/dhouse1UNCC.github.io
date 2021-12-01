@@ -13,12 +13,51 @@ var currentImageInfo = document.getElementById("currentphotoinfo");
  */
 function pageStartup(){
 	updateCurrent(0);
-	setPreview();
+	startPreview();
 	return;
 }
  
+function scrollUp(){
+	setPreview(0,document.getElementByID("preview1").innerHTML);
+	setPreview(1,document.getElementByID("preview2").innerHTML);
+	setPreview(2,document.getElementByID("preview3").innerHTML);
+	if(scroll==entryCount-3){
+		scroll++
+		setPreview(3, imageArr[0]);
+	}
+	else if(scroll==entryCount-2){
+		scroll++;
+		setPreview(3, imageArr[1]); 
+	}
+	else if(scroll==entryCount-1){
+		scroll++
+		setPreview(3, imageArr[2]);
+	}
+	else if(scroll==entryCount){
+		scroll=0;
+		setPreview(3, imageArr[3]);
+	}
+	else{
+		scroll++;
+		setPreview(3, imageArr[scroll+3]);
+		}
+		
+	}
+}
 
-//
+function scrollDown(){
+	if(scroll==0){
+		scroll=entryCount;
+	}
+	else{
+		scroll--;
+	}
+	setPreview(1, document.getElementByID("preview0").innerHTML);
+	setPreview(2, document.getElementByID("preview1").innerHTML);
+	setPreview(3, document.getElementByID("preview2").innerHTML); 	
+	setPreview(0,imageArr[scroll]);
+}
+//Sets current Picture
 function updateCurrent(id){
 	var currentImage = document.getElementById("currentphoto");
 	var currentImageInfo = document.getElementById("currentphotoinfo");
@@ -28,8 +67,17 @@ function updateCurrent(id){
 	return;
 }
 
-function setPreview(){
-	document.getElementById("preview1").innerHTML +=
+//Setup Preview on page Load
+function startPreview(){
+	for(var i = 0; i < imageArr.length || i < 4; i++){
+		setPreview(i, imageArr[i]);
+	}
+	return;
+}
+//changes 
+function setPreview(id, content){
+	var name = "preview" + id;
+	document.getElementById(name).innerHTML = content;
 	return;
 }
 			
@@ -77,7 +125,7 @@ $(document).ready(function() {
 							"<p>" + value.description + "</p>"
 					);
 					imageArr.push(
-							"<img src='" + value.url +"'>"
+							"<a onclick='updateCurrent(entryCount)'"+"<img src='" + value.url +"'></a>"
 					);
 					entryCount++;
 				});
