@@ -69,7 +69,7 @@ function updateCurrent(id){
 
 //Setup Preview on page Load
 function startPreview(){
-	for(var i = 0; i < imageArr.length || i < 4; i++){
+	for(var i = 0; i < imageArr.length && i < 4; i++){
 		setPreview(i, imageArr[i]);
 	}
 	return;
