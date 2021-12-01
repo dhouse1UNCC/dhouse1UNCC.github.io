@@ -124,7 +124,7 @@ header a img{
 }
 
 #currentphotobox #currentphoto img{
-	max-height:100%;
+	max-height:40em;
 	max-width:100%;
 	height: auto;
 	width: auto;
