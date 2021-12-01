@@ -18,9 +18,9 @@ function pageStartup(){
 }
  
 function scrollUp(){
-	setPreview(0,document.getElementByID("preview1").innerHTML);
-	setPreview(1,document.getElementByID("preview2").innerHTML);
-	setPreview(2,document.getElementByID("preview3").innerHTML);
+	setPreview(0,document.getElementById("preview1").innerHTML);
+	setPreview(1,document.getElementById("preview2").innerHTML);
+	setPreview(2,document.getElementById("preview3").innerHTML);
 	if(scroll==entryCount-3){
 		scroll++
 		setPreview(3, imageArr[0]);
@@ -51,9 +51,9 @@ function scrollDown(){
 	else{
 		scroll--;
 	}
-	setPreview(1, document.getElementByID("preview0").innerHTML);
-	setPreview(2, document.getElementByID("preview1").innerHTML);
-	setPreview(3, document.getElementByID("preview2").innerHTML); 	
+	setPreview(1, document.getElementById("preview0").innerHTML);
+	setPreview(2, document.getElementById("preview1").innerHTML);
+	setPreview(3, document.getElementById("preview2").innerHTML); 	
 	setPreview(0,imageArr[scroll]);
 	return;
 }
