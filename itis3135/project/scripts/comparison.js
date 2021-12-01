@@ -49,7 +49,7 @@ $(document).ready(function() {
 					
 					var prosHTML = "<ul>Pros";
 					var consHTML = "<ul>Cons";
-					for(var i = 0; i < pros.length; i++){
+					for(var i = 0; i < pros.length || i < cons.length; i++){
 						if(pros[i]!=undefined){prosHTML += "<li>"+ pros[i] +"</li>";}
 						if(cons[i]!=undefined){consHTML += "<li>"+ cons[i] +"</li>";}
 					}
