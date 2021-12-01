@@ -183,6 +183,7 @@ header a img{
 }
 .preview{
 	height:10em;
+	text-align: center;
 }
 .preview a img{
 	max-height: 10em;
