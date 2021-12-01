@@ -41,7 +41,7 @@ function scrollUp(){
 		scroll++;
 		setPreview(3, imageArr[scroll+3]);
 		}
-		
+		return;
 	}
 }
 
@@ -56,6 +56,7 @@ function scrollDown(){
 	setPreview(2, document.getElementByID("preview1").innerHTML);
 	setPreview(3, document.getElementByID("preview2").innerHTML); 	
 	setPreview(0,imageArr[scroll]);
+	return;
 }
 //Sets current Picture
 function updateCurrent(id){
