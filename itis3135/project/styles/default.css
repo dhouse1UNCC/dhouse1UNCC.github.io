@@ -24,6 +24,7 @@ h2, h3{
 h3, p, figcaption, ul{
 	font-family: sans-serif;
 }
+figcaption{float:bottom;}
 #topnavigation{
 	display:flex;
 	font-size: 32px;
