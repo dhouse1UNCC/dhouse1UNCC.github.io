@@ -144,22 +144,22 @@ header a img{
 }
 #currentphotobox button{
 	position: relative;
-	top:42.5%;
+	bottom:50%;
 }
 
 #currentphotobox button:hover{
 	opacity:75%;
 	height: 20%;
 	width: 15%;
-	top:40%;
+	bottom:40%;
 }
 
 #photogallery #leftbutton{
-	float:right;
+	float:left;
 }
 
 #photogallery #rightbutton{
-	float:left;
+	float:right;
 }
 
 #previews button{
