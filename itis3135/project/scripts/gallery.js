@@ -1,7 +1,7 @@
 //[id, image_name, title, description]
 var scroll = 0;
 var entryCount =0;
-var currentImageCount = 0;
+var currentImageId = 0;
 var imageInfo = [];
 var imageArr = [];
 var currentImage = document.getElementById("currentphoto");
@@ -19,9 +19,11 @@ function pageStartup(){
 
 //
 function updateCurrent(id){
+	var currentImage = document.getElementById("currentphoto");
+	var currentImageInfo = document.getElementById("currentphotoinfo");
 	currentImage.innerHTML = imageArr[id];
 	currentImageInfo.innerHTML = imageInfo[i];
-	currentImageCount = id;
+	currentImageId = id;
 	return;
 }
 
@@ -40,27 +42,27 @@ function generatePreview(id){
 
 function lastPicture(){
 	var newId = 0;
-	if(parseInt(currentImageCount) === parseInt(0)){
+	if(parseInt(currentImageId) === parseInt(0)){
 		//alert("going to back");
 		newId = imageInfo.length-1;
 		updateCurrent(newId);
 		return;
 	}
 	//alert("going back 1");
-	newId= currentImageCount-1;
+	newId= currentImageId-1;
 	updateCurrent(newId);
 }
 
 function nextPicture(){
 	var newId = 0;
-	if(parseInt(currentImageCount) === parseInt(imageinfo.length-1)){
+	if(parseInt(currentImageId) === parseInt(imageinfo.length-1)){
 		//alert("going to front");
 		newId = 0;
 		updateCurrent(newId);
 		return;
 	}
 	//alert("going forward 1");
-	newId= currentImageCount+1;
+	newId= currentImageId+1;
 	updateCurrent(newId);
 }
 
