@@ -75,6 +75,9 @@ $(document).ready(function() {
 					entryCount++;
 				});
 			});
+		},
+		complete: function(){
+			showEntry('0');
 		}
 	});
 });
