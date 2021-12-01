@@ -43,7 +43,6 @@ function scrollUp(){
 		}
 		return;
 	}
-}
 
 function scrollDown(){
 	if(scroll==0){
