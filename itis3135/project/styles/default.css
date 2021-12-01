@@ -6,16 +6,23 @@ header{
 }
 footer{
 	background-color:#676767;
+	text-align: center;
 	}
-h1{
-	text-align:center;
-	font-size: 3em;
+header{
+	display: grid;
+	grid-template-columns:50% 50%;
+}
+header img, header h1{
+	vertical-align:middle;
 }
 a{
 	color:black;
 }
-h2{
+h2, h3{
 	text-align:center;
+}
+h3, p, figcaption, ul{
+	font-family: sans-serif;
 }
 #topnavigation{
 	display:flex;
@@ -74,7 +81,7 @@ header a img{
 	background-color: blue;
 }
 
-#photogallery #currentphoto{
+#photogallery #currentphotobox{
 	background-color:black;
 	grid-column:1/span 4;
 	grid-row:1/span4;
@@ -274,14 +281,18 @@ header a img{
 
 /*CSS for About Us Page starts here*/
 #aboutus div:nth-child(2){
-	font-size:200%;
+	font-size:150%;
+	margin-left: 1em;
 }
-#aboutus div:nth-child(1){
-	background-color:gray;
-	width:15em;
-	height:25em;
+#aboutus div a img{
+	padding-left: 2em;
+}
+#aboutus div a img:nth-child(1){
+	padding-left: 13em;
+}
+#aboutus figure{
 	float:right;
-	margin-right:4em;
+	text-align: center;
 }
 /*CSS for About Us Page ends here*/
 
