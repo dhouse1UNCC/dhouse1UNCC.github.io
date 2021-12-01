@@ -46,7 +46,6 @@ $(document).ready(function() {
 					
 					var pros = value.pros;
 					var cons = value.cons;
-					alert(pros);
 					
 					var prosHTML = "<ul>Pros";
 					var consHTML = "<ul>Cons";
@@ -75,5 +74,6 @@ $(document).ready(function() {
 			});
 		}
 	});
+	showEntry(0);
 });
 	
