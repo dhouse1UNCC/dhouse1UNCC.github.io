@@ -6,7 +6,7 @@
 		"image": "images/natureshead2.png",
 		"imageurl": "",
 		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1"]
+		"cons" : ["Con 1", "Con 2", "Con 3", "Con 4"]
 	},
 	{
 		"name": "Airhead",
