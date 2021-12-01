@@ -292,6 +292,13 @@ header a img{
 	margin-top: 1em;
 	margin-bottom:1em;
 }
+ #comparisontext ul{
+	 font-size:200%;
+ }
+  #comparisontext ul li{
+	 font-size:100%;
+ }
+ 
 /*CSS for Comparison Page ends here*/
 
 /*CSS for About Us Page starts here*/
