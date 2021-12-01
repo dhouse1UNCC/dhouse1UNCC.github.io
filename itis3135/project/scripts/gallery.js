@@ -39,14 +39,14 @@ function scrollUp(){
 	}
 	else{
 		scroll++;
-		setPreview(3, imageArr[scroll+2]);
+		setPreview(3, imageArr[scroll+3]);
 		}
 		return;
 	}
 
 function scrollDown(){
 	if(scroll==0){
-		scroll=entryCount;
+		scroll=entryCount-1;
 	}
 	else{
 		scroll--;
