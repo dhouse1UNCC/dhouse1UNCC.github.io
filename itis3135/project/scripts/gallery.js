@@ -39,7 +39,7 @@ function scrollUp(){
 	}
 	else{
 		scroll++;
-		setPreview(3, imageArr[scroll+3]);
+		setPreview(3, imageArr[scroll+2]);
 		}
 		return;
 	}
@@ -51,9 +51,9 @@ function scrollDown(){
 	else{
 		scroll--;
 	}
-	setPreview(1, document.getElementById("preview0").innerHTML);
+	setPreview(3, document.getElementById("preview2").innerHTML);
 	setPreview(2, document.getElementById("preview1").innerHTML);
-	setPreview(3, document.getElementById("preview2").innerHTML); 	
+	setPreview(1, document.getElementById("preview0").innerHTML); 	
 	setPreview(0,imageArr[scroll]);
 	return;
 }
