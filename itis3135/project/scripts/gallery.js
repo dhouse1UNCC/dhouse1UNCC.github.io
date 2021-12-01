@@ -2,6 +2,9 @@
 var imageinfo=[["0","image.png","Urinal Ultimatium","I can't believe this"], ["1", "yikes.png", "Toilet Trouble", "A lifetime of fear"],
 ["3", "asd.png", "No toiltet paper here", "wiping is overrated"],["6", "asdfasd.png", "Monkeys are cool", "But chimps are cooler"]];
 var scroll = 0;
+var entryCount =0;
+var currentImage = 0;
+
 
 /* Takes care of processes that need to take place on page start up, such as filling the array above.
 
@@ -54,14 +57,12 @@ function getDesciption(id){
 
 //
 function updateCurrent(id){
-	var pos = getIdPosition(id);
-	setId(imageinfo[pos][0]);
-	//setImage(imageinfo[pos][1]);
-	setTitle(imageinfo[pos][2]);
-	setDescription(imageinfo[pos][3]);
+	var fileLoc = "";
+	var currentImg = document.getElementById("currentPhoto");
+	currentImg.innerHTML = "<img src='"+ +"'";
 }
 
-function updatePreview(){
+function updatePreview(){Malachai's Artifice Unset Ring
 	var htmlId;
 	for(var i = 0; i < 4; i++){
 		htmlId="preview"+String(i);
@@ -74,9 +75,8 @@ function generatePreview(id){
 }
 
 function lastPicture(){
-	var currId = parseInt(getIdCurrent());
 	var newId = 0;
-	if(parseInt(currId) === parseInt(getId(0))){
+	if(parseInt(currentImage) === parseInt(entryCount)){
 		//alert("going to back");
 		newId = getId(imageinfo.length-1);
 		updateCurrent(newId);
@@ -121,3 +121,41 @@ function setTitle(title){
 	document.getElementById("phototitle").innerHTML = String(title);
 	return;
 }
+
+$(document).ready(function() {
+	$.ajax({
+		type: "get",
+		url: "json/gallery.json",
+		timeout: 10000,
+			error: function(xhr, status, error) {
+			alert("Error: " + xhr.status + " - " + error);
+		},
+		dataType: "json",
+		success: function(data) {
+			$.each(data, function() {
+				$.each(this, function(key, value) {
+					$("#currentpictureinfo").append(
+						"<div id='text" + entryCount +"' hidden>" +
+							"<h3>" + value.title+ "</h3>" +
+							"<p>" + value.description + "</p>" +
+						"</div>"
+					);
+					$("#currentpicture").append(
+						"<div id='picture" + entryCount + "' hidden>" +
+							"<img src='" + value.image +"'>" +
+						"</div>"
+					);
+					if(entryCount == 0){
+						var firstElementText = document.getElementById("text0");
+						var firstElementPic = document.getElementById("picture0");
+						
+						firstElementText.style.display = "block";
+						firstElementPic.style.display = "block";
+					}
+					entryCount++;
+				});
+			});
+		}
+	});
+	
+});

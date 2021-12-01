@@ -1,7 +1,18 @@
 {"images":[
 	{
-		"url": "December",
-		"title": "Fossil Threads in the Web of Life",
-		"description": "Scott Sampson",
-		}
+		"url": "images/",
+		"title": "Pot-T Expo Table",
+		"description": "A table featuring the Pot-T at Outdoorsmen Expo 2017 in Austin, Texas.",
+	},
+	{
+		"url": "images/",
+		"title": "Original Pot-T",
+		"description": "The original Pot-T Design, which was first created on ___________.",
+	},
+	{
+		"url": "images/",
+		"title": "Current Pot-T Design",
+		"description": "This is the latest design for the Pot-T, first completed on ________.",
+	},
+	
 ]}
