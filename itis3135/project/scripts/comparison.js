@@ -73,7 +73,7 @@ $(document).ready(function() {
 				});
 			});
 		},
-		complete: showEntry(0);
+		complete: showEntry(0)
 	});
 });
 	
