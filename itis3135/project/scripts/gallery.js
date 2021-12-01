@@ -22,19 +22,19 @@ function scrollUp(){
 	setPreview(0,document.getElementById("preview1").innerHTML);
 	setPreview(1,document.getElementById("preview2").innerHTML);
 	setPreview(2,document.getElementById("preview3").innerHTML);
-	if(scroll==entryCount-3){
+	if(scroll==entryCount-4){
 		scroll++
 		setPreview(3, imageArr[0]);
 	}
-	else if(scroll==entryCount-2){
+	else if(scroll==entryCount-3){
 		scroll++;
 		setPreview(3, imageArr[1]); 
 	}
-	else if(scroll==entryCount-1){
+	else if(scroll==entryCount-2){
 		scroll++
 		setPreview(3, imageArr[2]);
 	}
-	else if(scroll==entryCount){
+	else if(scroll==entryCount-1){
 		scroll=0;
 		setPreview(3, imageArr[3]);
 	}
