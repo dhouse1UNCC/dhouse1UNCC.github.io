@@ -91,12 +91,18 @@ header a img{
 	display:grid;
 	grid-template:
 	"a a a a b b c" 10em
-	"a a a a b b d" 10em
-	"a a a a b b e" 10em
-	"a a a a b b f" 10em / 13.3333% 13.3333% 13.3333% 13.3333% 13.3333% 13.3333%;
+	"a a a a b b c" 10em
+	"a a a a b b c" 10em
+	"a a a a b b c" 10em / 13.3333% 13.3333% 13.3333% 13.3333% 13.3333% 13.3333%;
 	background-color: blue;
 }
-
+#previews{
+	height:40em;
+	grid-template-rows: 10em 10em 10em 10em;
+}
+#previews .preview{
+	height:10em;
+}
 #photogallery #currentphotobox{
 	background-color:black;
 	grid-column:1/span 4;
@@ -131,24 +137,23 @@ header a img{
 	height: auto;
 	width: auto;
 }
-#photogallery .preview{
-	border: 3px dotted black;
-	
-}
 
 #photogallery button{
 	height:15%;
 	width:10%;
 	background-color: white;
-	opacity:45%;
-	margin-top:-50%;	
+	opacity:45%;	
+}
+#currentphotobox button{
+	position: relative;
+	top:42.5%;
 }
 
 #photogallery button:hover{
 	opacity:75%;
 	height: 20%;
 	width: 15%;
-	margin-top:-52.5%;
+	top:40%;
 }
 
 #photogallery #leftbutton{

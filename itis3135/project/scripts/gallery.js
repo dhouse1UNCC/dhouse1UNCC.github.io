@@ -13,6 +13,7 @@ var currentImageInfo = document.getElementById("currentphotoinfo");
  */
 function pageStartup(){
 	updateCurrent(0);
+	setPreview();
 	return;
 }
  
@@ -27,18 +28,11 @@ function updateCurrent(id){
 	return;
 }
 
-function updatePreview(){
-	var htmlId;
-	for(var i = 0; i < 4; i++){
-		htmlId="preview"+String(i);
-		document.getElementById(htmlID).innerHTML = "<img src='/images/"+ String(getImageName((scroll+i)%imageinfo.length)) +"' height=100% width=100%>";
-	}return;
-	
-}
-			
-function generatePreview(id){
+function setPreview(){
+	document.getElementById("preview1").innerHTML +=
 	return;
 }
+			
 
 function lastPicture(){
 	var newId = 0;
