@@ -39,7 +39,7 @@ function scrollUp(){
 		setPreview(3, imageArr[3]);
 	}
 	else{
-		setPreview(3, imageArr[scroll+3]);
+		setPreview(3, imageArr[scroll+4]);
 		scroll++;
 		}
 		return;
