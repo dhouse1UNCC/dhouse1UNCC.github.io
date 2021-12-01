@@ -55,7 +55,7 @@ function lastPicture(){
 
 function nextPicture(){
 	var newId = 0;
-	if(parseInt(currentImageId) === parseInt(imageinfo.length-1)){
+	if(parseInt(currentImageId) === parseInt(imageInfo.length-1)){
 		//alert("going to front");
 		newId = 0;
 		updateCurrent(newId);
