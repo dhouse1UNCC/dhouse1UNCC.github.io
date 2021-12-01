@@ -24,7 +24,10 @@ h2, h3{
 h3, p, figcaption, ul{
 	font-family: sans-serif;
 }
-figcaption{float:bottom;}
+figure{
+	display:grid;
+	grid-template-rows: auto auto;
+}
 #topnavigation{
 	display:flex;
 	font-size: 32px;
