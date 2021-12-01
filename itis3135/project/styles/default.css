@@ -101,6 +101,8 @@ header a img{
 	background-color:black;
 	grid-column:1/span 4;
 	grid-row:1/span4;
+	display:block;
+	text-align:center;
 }
 
 #photogallery #currentphotoinfo{
@@ -149,9 +151,12 @@ header a img{
 	margin-top:-52.5%;
 }
 
-#photogallery #rightbutton{
+#photogallery #leftbutton{
 	float:right;
-	margin-left:10px;
+}
+
+#photogallery #rightbutton{
+	float:left;
 }
 
 #photogallery .preview button{
