@@ -190,6 +190,7 @@ header a img{
 #journal .jline{ 
 	border-right: thick solid black;
 	margin-bottom: .5em;
+	margin-left: .5em;
 }
 #journal .entry h3{
 	padding-bottom:1em;
