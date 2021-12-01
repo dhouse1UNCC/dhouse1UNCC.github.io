@@ -78,10 +78,10 @@ $(document).ready(function() {
 				$.each(this, function(key, value) {
 					imageInfo.push(
 							"<h3>" + value.title+ "</h3>" +
-							"<p>" + value.description + "</p>" +
+							"<p>" + value.description + "</p>"
 					);
 					imageArr.push(
-							"<img src='" + value.image +"'>" +
+							"<img src='" + value.image +"'>"
 					);
 					entryCount++;
 				});
