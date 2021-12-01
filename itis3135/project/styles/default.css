@@ -130,10 +130,12 @@ header a img{
 }
 
 #currentphotobox #currentphoto img{
+	display:block;
 	max-height:40em;
 	max-width:100%;
 	height: auto;
 	width: auto;
+	margin:auto;
 }
 
 #photogallery button{
