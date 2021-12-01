@@ -278,8 +278,8 @@ header a img{
 	width: auto;
 	margin-bottom:1em;
 }
-#comparisonpicture figure{
-	max-width:30%;
+#comparisonpicture figure img{
+	max-width:100%;
 	height: auto;
 }
 #comparison{
