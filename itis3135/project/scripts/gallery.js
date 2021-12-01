@@ -83,7 +83,7 @@ $(document).ready(function() {
 							"<p>" + value.description + "</p>"
 					);
 					imageArr.push(
-							"<img src='" + value.image +"'>"
+							"<img src='" + value.url +"'>"
 					);
 					entryCount++;
 				});
