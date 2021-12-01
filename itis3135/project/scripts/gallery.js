@@ -22,7 +22,7 @@ function updateCurrent(id){
 	var currentImage = document.getElementById("currentphoto");
 	var currentImageInfo = document.getElementById("currentphotoinfo");
 	currentImage.innerHTML = imageArr[id];
-	currentImageInfo.innerHTML = imageInfo[i];
+	currentImageInfo.innerHTML = imageInfo[id];
 	currentImageId = id;
 	return;
 }
