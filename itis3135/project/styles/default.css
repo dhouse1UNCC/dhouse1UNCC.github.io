@@ -31,6 +31,12 @@ figure{
 figcpation{
 	text-align:center;
 }
+ul{
+	 font-size:150%;
+ }
+ul li{
+	 font-size:66.6666%;
+ }
 #topnavigation{
 	display:flex;
 	font-size: 32px;
@@ -292,12 +298,6 @@ header a img{
 	margin-top: 1em;
 	margin-bottom:1em;
 }
- #comparisontext ul{
-	 font-size:150%;
- }
-  #comparisontext ul li{
-	 font-size:66.6666%;
- }
  
 /*CSS for Comparison Page ends here*/
 
