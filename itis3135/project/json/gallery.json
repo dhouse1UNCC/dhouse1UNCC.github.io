@@ -5,14 +5,23 @@
 		"description": "The Official Pot-T logo, created graciously by Mel Klein in November 2021."
 	},
 	{
-		"url": "images/",
+		"url": "images/airhead.png",
 		"title": "Original Pot-T",
 		"description": "The original Pot-T Design, which was first created on ___________."
 	},
 	{
-		"url": "images/",
+		"url": "images/book1.jpg",
+		"title": "Current Pot-T Design",
+		"description": "This is the latest design for the Pot-T, first completed on ________."
+	},
+	{
+		"url": "images/book2.jpg",
+		"title": "Current Pot-T Design",
+		"description": "This is the latest design for the Pot-T, first completed on ________."
+	},
+	{
+		"url": "images/chead.png",
 		"title": "Current Pot-T Design",
 		"description": "This is the latest design for the Pot-T, first completed on ________."
 	}
-	
 ]}
