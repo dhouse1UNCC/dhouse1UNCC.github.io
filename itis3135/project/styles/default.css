@@ -276,6 +276,7 @@ header a img{
 	margin-right: auto;
 	height: auto;
 	width: auto;
+	max-width:25%;
 	margin-bottom:1em;
 }
 #comparison{
