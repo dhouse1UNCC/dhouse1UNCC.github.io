@@ -3,54 +3,72 @@
 		"name": "Natures Head 2",
 		"link" : "https://store.natureshead.net/",
 		"description": "This is a toilet joke",
-		"image": "images/natureshead2.png"
+		"image": "images/natureshead2.png",
+		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
+		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
 	{
 		"name": "Airhead",
 		"link" : "https://airheadtoilet.com/?v=7516fd43adaa",
 		"description": "Fossil Threads in the Web of Life",
-		"image": "images/airhead.png"
+		"image": "images/airhead.png",
+		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
+		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
 	{
 		"name": "C-Head",
 		"link" : "https://www.c-head.com/",
 		"description": "Fossil Threads in the Web of Life",
-		"image": "images/chead.png"
+		"image": "images/chead.png",
+		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
+		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
 	{
 		"name": "Squatty Potty",
 		"link" : "https://www.squattypotty.com/",
 		"description": "Fossil Threads in the Web of Life",
-		"image": ""
+		"image": "",
+		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
+		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
 	{
 		"name": "Lovable Loo",
 		"link" : "https://loveableloo.store/collections/all/products/loveable-loo-compost-toilet",
 		"description": "Fossil Threads in the Web of Life",
-		"image": "images/loveableloo.png"
+		"image": "images/loveableloo.png",
+		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
+		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
 	{
 		"name": "Separett",
 		"link" : "https://separett.com/en",
 		"description": "Fossil Threads in the Web of Life",
-		"image": "images/separett.png"
+		"image": "images/separett.png",
+		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
+		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
 	{
 		"name": "Super Cheap Seat On Bucket",
 		"link" : "https://www.walmart.com/ip/Stansport-4-5-gal-Portable-Toilets/270524028?wmlspartner=wlpa&selectedSellerId=0&&adid=22222222227153685154&wl0=&wl1=g&wl2=c&wl3=264781781684&wl4=aud-1185573580265:pla-437998598570&wl5=9009904&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=270524028&veh=sem&gclid=Cj0KCQiAkZKNBhDiARIsAPsk0Wjfy_xKm5OsEIt40V1Ixl_kXhECRWWv9BcZqmuAj9PNxkJlYKF0KBoaAmVVEALw_wcB&gclsrc=aw.ds",
 		"description": "Fossil Threads in the Web of Life",
-		"image": "images/supercheapseat.png"
+		"image": "images/supercheapseat.png",
+		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
+		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
 	{
 		"name": "Nicer Seat on Bucket",
 		"link" : "",
 		"description": "Fossil Threads in the Web of Life",
-		"image": ""
+		"image": "",
+		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
+		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
 	{
 		"name": "Thetford",
 		"link" : "https://www.thetford.com/",
 		"description": "Fossil Threads in the Web of Life",
-		"image": ""
+		"image": "",
+		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
+		"cons" : ["Con 1", "Con 2", "Con 3"]
 	}
 ]}

@@ -44,10 +44,24 @@ $(document).ready(function() {
 						"<button onclick='showEntry(" + entryCount + ")'>"+ value.name +"</button>"
 					);
 					
+					var pros = value.pros;
+					var cons = value.cons;
+					alert(pros);
+					
+					var prosHTML = "<ul>Pros";
+					var consHTML = "<ul>Cons";
+					for(var i = 0; i < pros.length; i++){
+						prosHTML += "<li>"+ pros[i] +"</li>";
+						consHTML += "<li>"+ cons[i] +"</li>";
+					}
+					prosHTML += "</ul>";
+					consHTML += "</ul>";
+					
 					$("#comparisontext").append(
 						"<div id='text" + entryCount +"' hidden>" +
-							"<a href ='" + value.link +"'><h2>" + value.name+ "</h2></a>" +
+							"<a href ='" + value.link +"'><h3>" + value.name+ "</h3></a>" +
 							"<p>" + value.description + "</p>" +
+							prosHTML + consHTML;
 						"</div>"
 					);
 						
@@ -61,7 +75,5 @@ $(document).ready(function() {
 			});
 		}
 	});
-	
-	
 });
 	
