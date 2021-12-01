@@ -50,8 +50,8 @@ $(document).ready(function() {
 					var prosHTML = "<ul>Pros";
 					var consHTML = "<ul>Cons";
 					for(var i = 0; i < pros.length; i++){
-						prosHTML += "<li>"+ pros[i] +"</li>";
-						consHTML += "<li>"+ cons[i] +"</li>";
+						if(pros[i]!=undefined){prosHTML += "<li>"+ pros[i] +"</li>";}
+						if(cons[i]!=undefined){consHTML += "<li>"+ cons[i] +"</li>";}
 					}
 					prosHTML += "</ul>";
 					consHTML += "</ul>";
