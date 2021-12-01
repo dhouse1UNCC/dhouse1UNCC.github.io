@@ -28,6 +28,9 @@ figure{
 	display:grid;
 	grid-template-rows: auto auto;
 }
+figcpation{
+	text-align:center;
+}
 #topnavigation{
 	display:flex;
 	font-size: 32px;
