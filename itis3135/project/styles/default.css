@@ -184,6 +184,10 @@ header a img{
 .preview{
 	height:10em;
 }
+.preview a img{
+	max-height: 10em;
+	width:auto;
+}
 /*CSS for Photo Gallery ends here*/
 
 /*CSS for Journal Page Starts Here*/

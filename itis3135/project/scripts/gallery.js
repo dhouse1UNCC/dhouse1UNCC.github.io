@@ -125,7 +125,7 @@ $(document).ready(function() {
 							"<p>" + value.description + "</p>"
 					);
 					imageArr.push(
-							"<a onclick='updateCurrent("+ entryCount +")'" + "<img src='" + value.url +"'></a>"
+							"<a onclick='updateCurrent("+ entryCount +")'>" + "<img src='" + value.url +"'></a>"
 					);
 					entryCount++;
 				});
