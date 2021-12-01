@@ -48,7 +48,7 @@ function scrollUp(){
 function scrollDown(){
 	alert(scroll + " " + entryCount);
 	if(scroll==0){
-		scroll=entryCount;
+		scroll=entryCount-1;
 	}
 	else{
 		scroll--;
