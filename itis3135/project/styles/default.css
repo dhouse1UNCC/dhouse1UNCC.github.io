@@ -109,6 +109,7 @@ header a img{
 	grid-row:1/span4;
 	display:block;
 	text-align:center;
+	position:relative;
 }
 
 #photogallery #currentphotoinfo{
@@ -147,8 +148,10 @@ header a img{
 	opacity:45%;	
 }
 #currentphotobox button{
-	margin-top:auto;
-	margin-bottom:auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #currentphotobox button:hover{
@@ -159,27 +162,33 @@ header a img{
 }
 
 #photogallery #leftbutton{
-	float:left;
+	left:0;
 }
 
 #photogallery #rightbutton{
-	float:right;
+	right:0;
+}
+
+#previews{
+	position:relative;
 }
 
 #previews button{
-	position: relative;
+	position: absolute;
 	width: 35%;
 	height: 5%;
 }
 #previews #topbutton{
-	left:32.5%;
-	bottom:100%;
-}
-#previews #topbutton:hover{
-	bottom:100%;
+	left:50%;
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	top:0;
 }
 #previews #bottombutton{
-	bottom:5%;
+	left:50%;
+	-ms-transform:translateX(-50%);
+	transform:translateX(-50%);
+	bottom:1;
 }
 #previews button:hover{
 	width: 45%;
@@ -192,6 +201,14 @@ header a img{
 .preview a img{
 	max-height: 10em;
 	width:auto;
+}
+#currentphoto{    
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 /*CSS for Photo Gallery ends here*/
 
