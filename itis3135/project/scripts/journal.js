@@ -18,14 +18,14 @@ $(document).ready(function() {
 			$.each(data, function() {
 				$.each(this, function(key, value) {
 					var id="entry" + entryCount;
-					$("#journal").append(
-						'<div class="entry" id="entry' + entryCount +'" tabindex="' + entryCount + '">'+
+					var htmlCode = '<div class="entry" id="entry' + entryCount +'" tabindex="' + entryCount + '">'+
 							'<h3>' + value.date + '</h3>' +
 							'<h3>' + value.title + '</h3>' +
 							'<div class ="jline"><div></div></div>' +
 							'<p>' + value.content+ '</p>' +
-						'</div>'
-					);
+						'</div>';
+					htmlCode += document.getElementById(#journal).innerHTML;
+					document.getElementById(#journal).innerHTML = htmlCode;
 					entryCount++;
 				});
 			});
@@ -33,7 +33,7 @@ $(document).ready(function() {
 		complete:function(data){
 			$( "#slider").slider({
 				orientation: "vertical",
-				range: "max",
+				range: "min",
 				min: 0,
 				max: entryCount-1,
 				value:  entryCount-1,
