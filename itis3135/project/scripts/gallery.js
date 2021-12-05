@@ -154,7 +154,7 @@ $(document).ready(function() {
 		scrollUp();
 	});
 	$('#bottombutton').click(function(){
-		scrolLDown();
+		scrollDown();
 	});
 	$('#rightbutton').click(function(){
 		nextPicture();
@@ -163,6 +163,6 @@ $(document).ready(function() {
 		lastPicture();
 	});
 	$(document).on("click", '.imgs', function(){
-		currentImage($(this).attr('value'));
+		updateCurrent($(this).attr('value'));
 	});
 });
