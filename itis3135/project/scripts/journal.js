@@ -33,7 +33,7 @@ $(document).ready(function() {
 		complete:function(data){
 			$( "#slider").slider({
 				orientation: "vertical",
-				range: "min",
+				range: "max",
 				min: 0,
 				max: entryCount-1,
 				value:  entryCount-1,
