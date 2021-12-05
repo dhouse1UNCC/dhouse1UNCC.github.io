@@ -38,7 +38,8 @@ $(document).ready(function() {
       range: "min",
       min: 0,
       max: entryCount,
-      value: 0,
+      value:  entryCount,
+	  setp: 1,
       slide: function( event, ui ) {
 		var idName= "entry" + ui.value;
         $(idName).focus();
