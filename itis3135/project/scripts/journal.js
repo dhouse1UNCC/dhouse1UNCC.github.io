@@ -19,7 +19,7 @@ $(document).ready(function() {
 				$.each(this, function(key, value) {
 					var id="entry" + entryCount;
 					$("#journal").append(
-						'<div class="entry" id="entry' + entryCount +'">'+
+						'<div class="entry" id="entry' + entryCount +'" tabindex="' + entryCount + '">'+
 							'<h3>' + value.date + '</h3>' +
 							'<h3>' + value.title + '</h3>' +
 							'<div class ="jline"><div></div></div>' +
