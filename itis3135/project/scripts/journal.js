@@ -27,7 +27,7 @@ $(document).ready(function() {
 					if(entryCount != 0){
 						htmlCode += document.getElementById('#journal').innerHTML;
 						}
-					document.getElementById('#journal').innerHTML = htmlCode;
+					$("#journal").html(htmlCode);
 					entryCount++;
 				});
 			});
