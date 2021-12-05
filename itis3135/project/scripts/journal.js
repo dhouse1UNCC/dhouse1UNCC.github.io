@@ -18,12 +18,10 @@ $(document).ready(function() {
 			$.each(data, function() {
 				$.each(this, function(key, value) {
 					var id="entry" + entryCount;
-					var htmlCode = '<div class="entry" id="entry' + entryCount +'" tabindex="' + entryCount + '">'+
-						'<h3>' + value.date + '</h3>' +
-						'<h3>' + value.title + '</h3>' +
-						'<div class ="jline"><div></div></div>' +
-						'<p>' + value.content+ '</p>' +
-						'</div>';
+					var htmlCode = '<div class="entry" id="entry' + entryCount +'" tabindex="' + entryCount + '">'+ 
+						'<h3>' + value.date + '</h3>' + '<h3>' + value.title + 
+						'</h3>' + '<div class ="jline"><div></div></div>' + 
+						'<p>' + value.content+ '</p>' + '</div>';
 					if(entryCount != 0){
 						htmlCode += $("#journal").html();
 						}
