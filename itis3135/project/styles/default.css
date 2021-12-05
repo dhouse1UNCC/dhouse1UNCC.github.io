@@ -225,8 +225,8 @@ header a img{
 	display:grid;
 	gap:.2em;
 	grid-template:
-	"a b" 2em
-	"c d" auto/ 10% 90%;
+		"a b" 2em
+		"c d" auto/ 8em auto;
 	margin: 0px 0px 0px .2em;
 }
 		
@@ -269,7 +269,7 @@ header a img{
 
 /*CSS for the the navigation map on the journal page starts here*/
 #sliderbox{
-	padding-top:.5em;
+	padding-top: 2em;
 	position: fixed;
 	width: 3.5%;
 	height: 50%;
