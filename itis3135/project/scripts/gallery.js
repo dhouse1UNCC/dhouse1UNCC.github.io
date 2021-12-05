@@ -137,4 +137,17 @@ $(document).ready(function() {
 			pageStartup();
 		}
 	});
+	
+	$('#topbutton').click(function(){
+		scrollUp();
+	});
+	$('#bottombutton').click(function(){
+		scrolLDown();
+	});
+	$('#rightbutton').click(function(){
+		nextPicture();
+	});
+	$('#leftbutton').click(function(){
+		lastPicture();
+	});
 });

@@ -41,7 +41,7 @@ $(document).ready(function() {
 			$.each(data, function() {
 				$.each(this, function(key, value) {
 					$("#comparisonnav").append(
-						"<button onclick='showEntry(" + entryCount + ")'>"+ value.name +"</button>"
+						"<button class='productButton' >"+ value.name +"</button>"
 					);
 					
 					var pros = value.pros;
@@ -79,6 +79,11 @@ $(document).ready(function() {
 		complete: function(){
 			showEntry('0');
 		}
+	});
+	
+	$(".productButton").click(function()
+		var entryNumber = $(this).attr('value');
+		showEntry(entryNumber);
 	});
 });
 	
