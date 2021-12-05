@@ -147,7 +147,6 @@ header a:hover{
 	height: auto;
 	width: auto;
 	margin:auto;
-	border: solid #00a550;
 }
 
 #photogallery button{
@@ -327,6 +326,7 @@ header a:hover{
 #comparisonpicture figure img{
 	max-width:100%;
 	height: auto;
+	border: solid #00a550;
 }
 #comparison{
 	display:grid;
