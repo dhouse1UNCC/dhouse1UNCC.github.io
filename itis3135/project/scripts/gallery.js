@@ -3,9 +3,10 @@ var scroll = 0;
 var entryCount =0;
 var currentImageId = 0;
 var imageInfo = [];
-var imageArr = [];
+var	$images = new Array();
 var currentImage = document.getElementById("currentphoto");
 var currentImageInfo = document.getElementById("currentphotoinfo");
+
 
 
 /* Takes care of processes that need to take place on page start up, such as filling the array above.
@@ -24,27 +25,28 @@ function scrollUp(){
 	setPreview(2,document.getElementById("preview3").innerHTML);
 	if(scroll==entryCount-4){
 		scroll++
-		setPreview(3, imageArr[0]);
+		setPreview(3, $images[0]);
 	}
 	else if(scroll==entryCount-3){
 		scroll++;
-		setPreview(3, imageArr[1]); 
+		setPreview(3, $images[1]); 
 	}
 	else if(scroll==entryCount-2){
 		scroll++
-		setPreview(3, imageArr[2]);
+		setPreview(3, $images[2]);
 	}
 	else if(scroll==entryCount-1){
 		scroll=0;
-		setPreview(3, imageArr[3]);
+		setPreview(3, $images[3]);
 	}
 	else{
-		setPreview(3, imageArr[scroll+4]);
+		setPreview(3, $images[scroll+4]);
 		scroll++;
 		}
 		return;
 	}
 
+//Scrolls down in the picture gallery
 function scrollDown(){
 	//alert(scroll + " " + entryCount);
 	if(scroll==0){
@@ -53,17 +55,21 @@ function scrollDown(){
 	else{
 		scroll--;
 	}
+	
+	//Changes previews based on the ones already in view
 	setPreview(3, document.getElementById("preview2").innerHTML);
 	setPreview(2, document.getElementById("preview1").innerHTML);
 	setPreview(1, document.getElementById("preview0").innerHTML); 	
-	setPreview(0,imageArr[scroll]);
+	adds
+	setPreview(0,$images[scroll]);
 	return;
 }
+
 //Sets current Picture
 function updateCurrent(id){
 	var currentImage = document.getElementById("currentphoto");
 	var currentImageInfo = document.getElementById("currentphotoinfo");
-	currentImage.innerHTML = imageArr[id];
+	currentImage.innerHTML = $images[id];
 	currentImageInfo.innerHTML = imageInfo[id];
 	currentImageId = id;
 	return;
@@ -71,19 +77,25 @@ function updateCurrent(id){
 
 //Setup Preview on page Load
 function startPreview(){
-	for(var i = 0; i < imageArr.length && i < 4; i++){
-		setPreview(i, imageArr[i]);
+	for(var i = 0; i < $images.length && i < 4; i++){
+		setPreview(i, $images[i]);
 	}
 	return;
 }
-//changes 
+
+/*Adds content to the appropiate preview slot
+*
+*params
+* id- preview index to be changed
+* content- a and nested img element to go into the preview slot
+*/
 function setPreview(id, content){
 	var name = "preview" + id;
 	document.getElementById(name).innerHTML = content;
 	return;
 }
 			
-
+//Goes back 1 image, if at the first image goes to the last image
 function lastPicture(){
 	var newId = 0;
 	if(parseInt(currentImageId) === parseInt(0)){
@@ -97,6 +109,7 @@ function lastPicture(){
 	updateCurrent(newId);
 }
 
+//Goes forward 1 image, if at the last image goes to the first image
 function nextPicture(){
 	var newId = 0;
 	if(parseInt(currentImageId) === parseInt(imageInfo.length-1)){
@@ -126,8 +139,7 @@ $(document).ready(function() {
 							"<h3>" + value.title+ "</h3>" +
 							"<p>" + value.description + "</p>"
 					);
-					imageArr.push(
-							"<a onclick='updateCurrent("+ entryCount +")'>" + "<img src='" + value.url +"'></a>"
+					$images.push($('<img>').attr({'src':value.url,'value':entryCount, 'class':imgs}));
 					);
 					entryCount++;
 				});
@@ -149,5 +161,8 @@ $(document).ready(function() {
 	});
 	$('#leftbutton').click(function(){
 		lastPicture();
+	});
+	$(document).on("click", '.imgs', function(){
+		currentImage($(this).attr('value'))O;
 	});
 });
