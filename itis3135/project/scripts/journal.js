@@ -1,3 +1,5 @@
+var entryCount = 0;
+
 $(document).ready(function() {
 	//load journal entries
 	$.ajax({
@@ -15,19 +17,33 @@ $(document).ready(function() {
 			$("#journal").html("");
 			$.each(data, function() {
 				$.each(this, function(key, value) {
+					var id="entry" + entryCount;
 					$("#journal").append(
-						'<div class="entry">'+
+						'<div class="entry" id="entry' + entryCount +'">'+
 							'<h3>' + value.date + '</h3>' +
 							'<h3>' + value.title + '</h3>' +
 							'<div class ="jline"><div></div></div>' +
 							'<p>' + value.content+ '</p>' +
 						'</div>'
 					);
+					entryCount++;
 				});
 			});
 		}
 	});
 	
+	
+	$( "#slider").slider({
+      orientation: "vertical",
+      range: "min",
+      min: 0,
+      max: entryCount,
+      value: 0,
+      slide: function( event, ui ) {
+		var idName= "entry" + ui.value;
+        $(idName).focus();
+      }
+    });
 	//set  up journal slider
 });
 	
