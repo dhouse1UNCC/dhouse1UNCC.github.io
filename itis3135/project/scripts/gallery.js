@@ -111,6 +111,7 @@ function lastPicture(){
 	}
 	//alert("going back 1");
 	newId= currentImageId-1;
+	alert(newId);
 	updateCurrent(newId);
 }
 
@@ -125,6 +126,7 @@ function nextPicture(){
 	}
 	//alert("going forward 1");
 	newId= currentImageId+1;
+	alert(newId);
 	updateCurrent(newId);
 }
 
