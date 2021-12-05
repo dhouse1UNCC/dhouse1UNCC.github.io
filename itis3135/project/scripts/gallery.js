@@ -90,9 +90,9 @@ function startPreview(){
 * content- a and nested img element to go into the preview slot
 */
 function setPreview(id, content){
-	var name = "preview" + id;
-	$(#name).html('');
-	$(#name).append(content);
+	var name = "#preview" + id;
+	$(name).html('');
+	$(name).append(content);
 	return;
 }
 			
