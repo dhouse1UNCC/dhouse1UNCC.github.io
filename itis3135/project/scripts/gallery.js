@@ -91,7 +91,8 @@ function startPreview(){
 */
 function setPreview(id, content){
 	var name = "preview" + id;
-	document.getElementById(name).innerHTML = content;
+	$(#name).html('');
+	$(#name).append(content);
 	return;
 }
 			
