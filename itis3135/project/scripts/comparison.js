@@ -58,7 +58,7 @@ $(document).ready(function() {
 					
 					$("#comparisontext").append(
 						"<div id='text" + entryCount +"' hidden>" +
-							"<a href ='" + value.link +"'><h3>" + value.name+ "</h3></a>" +
+							"<a href ='" + value.link +"' target='_blank'><h3>" + value.name+ "</h3></a>" +
 							"<p>" + value.description + "</p>" +
 							prosHTML + consHTML +
 						"</div>"
@@ -68,7 +68,7 @@ $(document).ready(function() {
 						"<div id='picture" + entryCount + "' hidden>" +
 							"<figure>" +
 							"<img src='" + value.image +"'>" +
-							"<figurecaption><a href=" + value.imageurl + ">Image Source</a></figurecaption>"+
+							"<figurecaption><a href='" + value.imageurl + "' target='_blank'>Image Source</a></figurecaption>"+
 							"</figure>"+
 						"</div>"
 					);

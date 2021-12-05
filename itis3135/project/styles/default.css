@@ -147,6 +147,7 @@ header a:hover{
 	height: auto;
 	width: auto;
 	margin:auto;
+	border: solid #00a550;
 }
 
 #photogallery button{
