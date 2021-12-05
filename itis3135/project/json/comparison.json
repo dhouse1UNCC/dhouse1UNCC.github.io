@@ -29,18 +29,18 @@
 	{
 		"name": "Squatty Potty",
 		"link" : "https://www.squattypotty.com/",
-		"description": "<iframe width='560' height='315' src='https://www.youtube.com/embed/YbYWhdLO43Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>Insert a summary of your thoughts here",
-		"image": "",
-		"imageurl": "",
+		"description": "<iframe width='560' height='315' style='margin-right:1em;' src='https://www.youtube.com/embed/YbYWhdLO43Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>Insert a summary of your thoughts here",
+		"image": "images/squattypotty.jpg",
+		"imageurl": "https://www.squattypotty.com/products/original",
 		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
 		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
 	{
 		"name": "Lovable Loo",
-		"link" : "https://loveableloo.store/collections/all/products/loveable-loo-compost-toilet",
+		"link" : "https://loveableloo.store/",
 		"description": "Insert a summary of your thoughts here",
 		"image": "images/loveableloo.png",
-		"imageurl": "",
+		"imageurl": "https://loveableloo.store/collections/all/products/loveable-loo-compost-toilet",
 		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
 		"cons" : ["Con 1", "Con 2", "Con 3"]
 	},
