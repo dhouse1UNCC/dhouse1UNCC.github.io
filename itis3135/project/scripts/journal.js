@@ -29,22 +29,21 @@ $(document).ready(function() {
 					entryCount++;
 				});
 			});
+		},
+		complete:function(data){
+			$( "#slider").slider({
+				orientation: "vertical",
+				range: "min",
+				min: 0,
+				max: entryCount,
+				value:  entryCount,
+				setp: 1,
+				slide: function( event, ui ) {
+					var idName= "entry" + ui.value;
+					$(idName).focus();
+				}
+			});
 		}
 	});
-	
-	
-	$( "#slider").slider({
-      orientation: "vertical",
-      range: "min",
-      min: 0,
-      max: entryCount,
-      value:  entryCount,
-	  setp: 1,
-      slide: function( event, ui ) {
-		var idName= "entry" + ui.value;
-        $(idName).focus();
-      }
-    });
-	//set  up journal slider
 });
 	
