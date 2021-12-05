@@ -40,7 +40,7 @@ $(document).ready(function() {
 				setp: 1,
 				slide: function( event, ui ) {
 					var idName= "entry" + ui.value;
-					$(idName).focus();
+					document.getElementById(idName).focus();
 				}
 			});
 		}
