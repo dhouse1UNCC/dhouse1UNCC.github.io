@@ -8,13 +8,13 @@ var currentImage = document.getElementById("currentphoto");
 var currentImageInfo = document.getElementById("currentphotoinfo");
 
 
-
 /* Takes care of processes that need to take place on page start up, such as filling the array above.
 
  */
 function pageStartup(){
 	updateCurrent(0);
 	startPreview();
+	instateImage();
 	return;
 }
  
@@ -60,7 +60,7 @@ function scrollDown(){
 	setPreview(3, document.getElementById("preview2").innerHTML);
 	setPreview(2, document.getElementById("preview1").innerHTML);
 	setPreview(1, document.getElementById("preview0").innerHTML); 	
-	setPreview(0,$images[scroll]);
+	setPreview(0, $images[scroll]);
 	return;
 }
 
@@ -90,8 +90,11 @@ function startPreview(){
 */
 function setPreview(id, content){
 	var name = "#preview" + id;
+	$('#holder').html('');
+	$('#holder').append(content);
+	
 	$(name).html('');
-	$(name).append(content);
+	$(name).append($('#holder').html());
 	return;
 }
 			
