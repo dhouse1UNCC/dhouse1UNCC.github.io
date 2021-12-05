@@ -358,10 +358,9 @@ header a:hover{
 #instructionbox ol li{
 	margin-bottom:1em;
 	margin-right:2em;
-	padding-right:2em;
 	border:solid black .1em;
 	font-size:75%;
-	
+	padding:.5em 2em .5em .5em;
 }
 #instructionbox ol{
 	padding-bottom:.2em;
