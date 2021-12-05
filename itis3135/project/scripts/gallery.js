@@ -60,7 +60,6 @@ function scrollDown(){
 	setPreview(3, document.getElementById("preview2").innerHTML);
 	setPreview(2, document.getElementById("preview1").innerHTML);
 	setPreview(1, document.getElementById("preview0").innerHTML); 	
-	adds
 	setPreview(0,$images[scroll]);
 	return;
 }
