@@ -8,8 +8,8 @@ var currentImage = document.getElementById("currentphoto");
 var currentImageInfo = document.getElementById("currentphotoinfo");
 
 
-/* Takes care of processes that need to take place on page start up, such as filling the array above.
-
+/* Takes care of processes that need to take place on page start up,
+* such as setting up the initial preview images and display image & info.
  */
 function pageStartup(){
 	startPreview();
@@ -17,6 +17,7 @@ function pageStartup(){
 	return;
 }
  
+ //Scrolls the preview bar on the side up
 function scrollUp(){
 	//alert(scroll + " " + entryCount);
 	setPreview(0,document.getElementById("preview1").innerHTML);
@@ -45,7 +46,7 @@ function scrollUp(){
 		return;
 	}
 
-//Scrolls down in the picture gallery
+//Scrolls the preview bar on the side down
 function scrollDown(){
 	//alert(scroll + " " + entryCount);
 	if(scroll==0){
@@ -63,7 +64,11 @@ function scrollDown(){
 	return;
 }
 
-//Sets current Picture
+/*Updates the current imageInfo
+* 
+*params
+* id- index of the image that the user wants the display
+*/
 function updateCurrent(id){
 	var currentImageInfo = document.getElementById("currentphotoinfo");
 	$('#holder').html('');
@@ -111,7 +116,7 @@ function lastPicture(){
 	}
 	//alert("going back 1");
 	newId= parseInt(currentImageId-1);
-	alert(newId);
+	//alert(newId);
 	updateCurrent(newId);
 }
 
@@ -126,11 +131,13 @@ function nextPicture(){
 	}
 	//alert("going forward 1");
 	newId= parseInt(currentImageId+1);
-	alert(newId);
+	//alert(newId);
 	updateCurrent(newId);
 }
 
+//Main Jquery module
 $(document).ready(function() {
+	//Ajax function to retrieve images from JSON file
 	$.ajax({
 		type: "get",
 		url: "json/gallery.json",
@@ -151,23 +158,29 @@ $(document).ready(function() {
 				});
 			});
 		},
+		//On complete, setup inital images
 		complete: function(data){
 			pageStartup();
 		}
 	});
 	
+	//Listener for top preview button 
 	$('#topbutton').click(function(){
 		scrollUp();
 	});
+	//Listener for bottom preview button 
 	$('#bottombutton').click(function(){
 		scrollDown();
 	});
+	//Listener for right gallery button
 	$('#rightbutton').click(function(){
 		nextPicture();
 	});
+	//Listener for left gallery button
 	$('#leftbutton').click(function(){
 		lastPicture();
 	});
+	//Listener for preview images, displays them upon user click
 	$(document).on("click", '.imgs', function(){
 		updateCurrent(parseInt($(this).attr('value')));
 	});
