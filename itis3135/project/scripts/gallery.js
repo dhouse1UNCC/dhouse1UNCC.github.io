@@ -110,7 +110,7 @@ function lastPicture(){
 		return;
 	}
 	//alert("going back 1");
-	newId= parseInt(currentImageId+1);
+	newId= parseInt(currentImageId-1);
 	alert(newId);
 	updateCurrent(newId);
 }
