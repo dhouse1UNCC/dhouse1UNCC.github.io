@@ -270,8 +270,8 @@ header a img{
 	width: 3.5%;
 	height: 50%;
 	background-color:white;
-	margin-left:85%;
-	margin-top:20%;
+	left:85%;
+	top:35%;
 	border-radius: 1em;
 	opacity:.7;
 	border: .3em solid black;

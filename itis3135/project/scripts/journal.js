@@ -35,8 +35,8 @@ $(document).ready(function() {
 				orientation: "vertical",
 				range: "min",
 				min: 0,
-				max: entryCount,
-				value:  entryCount,
+				max: entryCount-1,
+				value:  entryCount-1,
 				setp: 1,
 				slide: function( event, ui ) {
 					var idName= "entry" + ui.value;
