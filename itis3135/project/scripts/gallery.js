@@ -140,7 +140,6 @@ $(document).ready(function() {
 							"<p>" + value.description + "</p>"
 					);
 					$images.push($('<img>').attr({'src':value.url,'value':entryCount, 'class':imgs}));
-					);
 					entryCount++;
 				});
 			});
