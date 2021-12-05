@@ -12,9 +12,8 @@ var currentImageInfo = document.getElementById("currentphotoinfo");
 
  */
 function pageStartup(){
-	updateCurrent(0);
 	startPreview();
-	instateImage();
+	updateCurrent(0);
 	return;
 }
  
