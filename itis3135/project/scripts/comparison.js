@@ -41,7 +41,7 @@ $(document).ready(function() {
 			$.each(data, function() {
 				$.each(this, function(key, value) {
 					$("#comparisonnav").append(
-						"<button class='productButton' value ="+entryCount+">"+ value.name +"</button>"
+						"<button class='productButton' value ='"+entryCount+"'>"+ value.name +"</button>"
 					);
 					
 					var pros = value.pros;
