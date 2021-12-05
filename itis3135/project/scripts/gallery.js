@@ -162,6 +162,6 @@ $(document).ready(function() {
 		lastPicture();
 	});
 	$(document).on("click", '.imgs', function(){
-		currentImage($(this).attr('value'))O;
+		currentImage($(this).attr('value'));
 	});
 });
