@@ -25,7 +25,7 @@ $(document).ready(function() {
 						'<p>' + value.content+ '</p>' +
 						'</div>';
 					if(entryCount != 0){
-						htmlCode += document.getElementById('#journal').innerHTML;
+						htmlCode += $("#journal").html();
 						}
 					$("#journal").html(htmlCode);
 					entryCount++;
