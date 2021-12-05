@@ -29,7 +29,7 @@
 	{
 		"name": "Squatty Potty",
 		"link" : "https://www.squattypotty.com/",
-		"description": "<iframe width='560' height='315' src='https://www.youtube.com/embed/YbYWhdLO43Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>Insert a summary of your thoughts here"
+		"description": "<iframe width='560' height='315' src='https://www.youtube.com/embed/YbYWhdLO43Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>Insert a summary of your thoughts here",
 		"image": "",
 		"imageurl": "",
 		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
