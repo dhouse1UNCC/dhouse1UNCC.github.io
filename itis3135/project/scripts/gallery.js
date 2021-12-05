@@ -67,7 +67,7 @@ function scrollDown(){
 function updateCurrent(id){
 	var currentImageInfo = document.getElementById("currentphotoinfo");
 	$('#holder').html('');
-	$('#holder').append($imgs[id]);
+	$('#holder').append($images[id]);
 	
 	$("#currentphoto").html('');
 	$("#currentphoto").append($('#holder').html());
