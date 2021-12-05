@@ -81,7 +81,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	$(".productButton").click(function()
+	$(".productButton").click(function(){
 		var entryNumber = $(this).attr('value');
 		showEntry(entryNumber);
 	});
