@@ -220,7 +220,7 @@ header a:hover{
   transform: translate(-50%, -50%);
 }
 #holder{
-	block: none;
+	display: none;
 }
 /*CSS for Photo Gallery ends here*/
 
