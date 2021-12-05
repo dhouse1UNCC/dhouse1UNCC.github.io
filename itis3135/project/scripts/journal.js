@@ -24,8 +24,8 @@ $(document).ready(function() {
 							'<div class ="jline"><div></div></div>' +
 							'<p>' + value.content+ '</p>' +
 						'</div>';
-					htmlCode += document.getElementById(#journal).innerHTML;
-					document.getElementById(#journal).innerHTML = htmlCode;
+					htmlCode += document.getElementById('#journal').innerHTML;
+					document.getElementById('#journal').innerHTML = htmlCode;
 					entryCount++;
 				});
 			});
