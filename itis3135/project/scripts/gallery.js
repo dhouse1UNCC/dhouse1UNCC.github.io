@@ -139,7 +139,7 @@ $(document).ready(function() {
 							"<h3>" + value.title+ "</h3>" +
 							"<p>" + value.description + "</p>"
 					);
-					$images.push($('<img>').attr({'src':value.url,'value':entryCount, 'class':imgs}));
+					$images.push($('<img>').attr({'src':value.url,'value':entryCount, 'class':'imgs'}));
 					entryCount++;
 				});
 			});
