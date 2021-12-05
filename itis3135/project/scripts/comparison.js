@@ -1,6 +1,13 @@
 var currentEntry = 0;
-	
+
+/*Function that changes the current comparison entry
+*
+*params
+* entry- index of the entry that the user wants to see
+*
+*/	
 function showEntry(entry){
+	//Compiles the id names of the old and new entries
 	var textName = "text" + entry;
 	var picName = "picture" + entry;
 	var currentText = 'text' + currentEntry;
@@ -8,16 +15,21 @@ function showEntry(entry){
 		
 	//alert(textName + picName + currentText +currentPic);
 	
+	//Gets ids of all needed elements
 	var oldTextElement = document.getElementById(currentText);
 	var oldPicElement = document.getElementById(currentPic);
 	var newTextElement = document.getElementById(textName);
 	var newPicElement = document.getElementById(picName);
-		
+	
+	//Hide previous entry
 	oldTextElement.style.display = "none";
 	oldPicElement.style.display = "none";
+	
+	//Show new entry
 	newTextElement.style.display = "block";
 	newPicElement.style.display = "block";
 		
+	//Changes current entry tracker value
 	currentEntry = entry;
 	}
 	
@@ -40,6 +52,7 @@ $(document).ready(function() {
 			$("#comparisonpicture").html("");
 			$.each(data, function() {
 				$.each(this, function(key, value) {
+					//Creates navigation button for each entry
 					$("#comparisonnav").append(
 						"<button class='productButton' value='"+entryCount+"'>"+ value.name +"</button>"
 					);
@@ -49,6 +62,8 @@ $(document).ready(function() {
 					
 					var prosHTML = "<ul>Pros";
 					var consHTML = "<ul>Cons";
+					
+					//Pulls all cons and pros for each entry
 					for(var i = 0; i < pros.length || i < cons.length; i++){
 						if(pros[i]!=undefined){prosHTML += "<li>"+ pros[i] +"</li>";}
 						if(cons[i]!=undefined){consHTML += "<li>"+ cons[i] +"</li>";}
@@ -56,6 +71,7 @@ $(document).ready(function() {
 					prosHTML += "</ul>";
 					consHTML += "</ul>";
 					
+					//Append text for the entry
 					$("#comparisontext").append(
 						"<div id='text" + entryCount +"' hidden>" +
 							"<a href ='" + value.link +"' target='_blank'><h3>" + value.name+ "</h3></a>" +
@@ -63,7 +79,7 @@ $(document).ready(function() {
 							prosHTML + consHTML +
 						"</div>"
 					);
-						
+					//Append picture for the entry
 					$("#comparisonpicture").append(
 						"<div id='picture" + entryCount + "' hidden>" +
 							"<figure>" +
@@ -76,14 +92,16 @@ $(document).ready(function() {
 				});
 			});
 		},
+		//On completeion, show the entry with index 0
 		complete: function(){
 			showEntry('0');
 		}
 	});
 	
+	//Listen for a product button the be pressed and update entry accordingly
 	$(document).on('click', '.productButton', function(){
 		var entryNumber = $(this).attr('value');
-		alert(entryNumber);
+		//alert(entryNumber);
 		showEntry(entryNumber);
 	});
 });
