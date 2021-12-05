@@ -116,6 +116,7 @@ header a img{
 	background-color:white;
 	grid-column:5/span 2;
 	grid-row:1/span 4;
+	padding-left:1em;
 }
 
 #photogallery #currentphotoinfo div{
