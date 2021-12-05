@@ -18,7 +18,7 @@ function pageStartup(){
 }
  
 function scrollUp(){
-	alert(scroll + " " + entryCount);
+	//alert(scroll + " " + entryCount);
 	setPreview(0,document.getElementById("preview1").innerHTML);
 	setPreview(1,document.getElementById("preview2").innerHTML);
 	setPreview(2,document.getElementById("preview3").innerHTML);
@@ -46,7 +46,7 @@ function scrollUp(){
 	}
 
 function scrollDown(){
-	alert(scroll + " " + entryCount);
+	//alert(scroll + " " + entryCount);
 	if(scroll==0){
 		scroll=entryCount-1;
 	}
