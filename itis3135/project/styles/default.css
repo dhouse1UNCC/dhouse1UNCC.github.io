@@ -282,31 +282,6 @@ header a img{
 	opacity:1;
 }
 
-#sliderbox #slider{
-	width:5%;
-	height:95%;
-	margin:20% 47.5%;
-	background-color:red;
-	border-radius:.5em;
-	}
-
-#sliderbox #slider li{
-	position:relative;
-	right:.25em;
-	list-style:none;
-	border-radius:50%;
-	width:300%;
-	height:2%;
-	margin:auto;
-	background-color:green;
-	margin-bottom:5em;
-}
-
-#sliderbox #slider li:hover{
-	width:600%;
-	height:4%;
-	right:.5em;
-}
 /*CSS for the the navigation map on the journal page ends here*/
 /*CSS for Journal Page ends here*/
 
