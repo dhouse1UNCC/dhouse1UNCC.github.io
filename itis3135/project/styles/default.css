@@ -64,14 +64,8 @@ main{
 	margin-top: 1em;
 }
 
-main {}
 .picplaceholder{
 	background-color:gray;
-	width:15em;
-	height:10em;
-	float:right;
-	margin-right:3em;
-	margin-left:2em;
 }
 header a img{
 	vertical-align:center;
@@ -90,6 +84,18 @@ header a:hover{
 
 #homepage h2{
 	text-align:left;
+}
+#homepage div img{
+	max-height:100%;
+	max-width:100%;
+}
+#homepage div{
+	width:30em;
+	height:17em;
+	float:right;
+	margin-right:3em;
+	margin-left:2em;
+	
 }
 /*CSS for index ends here*/
 
@@ -372,11 +378,18 @@ header a:hover{
 }
 
 #instructionbox ol li div{
+	
 	width:25em;
 	height:15em;
-	background-color:gray;
 	margin-bottom:1em;
 	margin-left: auto;
 }
+#instructionbox ol li div img{
+	display:block;
+	max-width: 100%;
+	max-height:100%;
+	height:auto;
+}
+
 
 /*CSS for Do It Page ends here*/

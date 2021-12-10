@@ -5,38 +5,23 @@
 		"description": "The Official Pot-T logo, created graciously by Mel Klein in November 2021."
 	},
 	{
-		"url": "images/airhead.png",
-		"title": "Original Pot-T",
-		"description": "The original Pot-T Design, which was first created on ___________."
+		"url": "images/centering.jpg",
+		"title": "Centering Base",
+		"description": "The base found at the bottom of the pot used in the Pot-T"
 	},
 	{
-		"url": "images/book1.jpg",
-		"title": "Current Pot-T Design",
-		"description": "This is the latest design for the Pot-T, first completed on ________."
+		"url": "images/pott_side.jpg",
+		"title": "Pot-T Composting Toilet - Side",
+		"description": "The Pot-T Composting Toilet as seen from the side."
 	},
 	{
-		"url": "images/book2.jpg",
-		"title": "Current Pot-T Design",
-		"description": "This is the latest design for the Pot-T, first completed on ________."
+		"url": "images/pott_front.jpg",
+		"title": "Pot-T Composting Toilet - Front",
+		"description": "The Pot-T Composting Toilet as seen from the front."
 	},
 	{
-		"url": "images/chead.png",
-		"title": "Current Pot-T Design",
-		"description": "This is the latest design for the Pot-T, first completed on ________."
-	},
-	{
-		"url": "images/lovableloo.png",
-		"title": "Current Pot-T Design",
-		"description": "This is the latest design for the Pot-T, first completed on ________."
-	},
-	{
-		"url": "images/supercheapseat.png",
-		"title": "Current Pot-T Design",
-		"description": "This is the latest design for the Pot-T, first completed on ________."
-	},
-	{
-		"url": "images/natureshead2.png",
-		"title": "Current Pot-T Design",
-		"description": "This is the latest design for the Pot-T, first completed on ________."
+		"url": "images/pott_open.png",
+		"title": "Pot-T Composting Toilet - Open",
+		"description": "The Pot-T Composting Toilet with the lid open."
 	}
 ]}
