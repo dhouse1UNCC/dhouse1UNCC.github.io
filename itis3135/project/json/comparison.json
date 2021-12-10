@@ -31,7 +31,7 @@
 	},
 	{
 		"name": "Squatty Potty",
-		"video": "https://www.youtube.com/video/YbYWhdLO43Q",
+		"video": "https://www.youtube.com/embed/YbYWhdLO43Q",
 		"link" : "https://www.squattypotty.com/",
 		"description": "A stool that helps achieve a more 'natural' position when pooping.",
 		"image": "images/squattypotty.jpg",
@@ -54,7 +54,7 @@
 		"video": "",
 		"link" : "https://separett.com/en",
 		"description": "Product line of similarly designed toilets that handle your waste in different ways. These include freezing and incinerating options.",
-		"image": "images/separett.png",
+		"image": "images/separett.jpg",
 		"imageurl": "https://separett.com/en/urine-diverting-toilet-tiny-with-urine-container",
 		"pros" : ["Diverse variety of models", "Mid-high range($700+)", "Built-in urine diversion"],
 		"cons" : ["Mid-high range($700+)", "Some models require electricity and or water"]

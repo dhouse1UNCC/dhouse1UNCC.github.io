@@ -78,8 +78,8 @@ $(document).ready(function() {
 					//Append text for the entry
 					$("#comparisontext").append(
 						"<div id='text" + entryCount +"' hidden>" +
-							embeded +
 							"<a href ='" + value.link +"' target='_blank'><h3>" + value.name+ "</h3></a>" +
+							embeded +
 							"<p>" + value.description + "</p>" +
 							prosHTML + consHTML +
 						"</div>"
