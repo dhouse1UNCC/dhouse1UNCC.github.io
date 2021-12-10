@@ -88,7 +88,7 @@ $(document).ready(function() {
 					$("#comparisonpicture").append(
 						"<div id='picture" + entryCount + "' hidden>" +
 							"<figure>" +
-							"<img src='" + value.image +"'>" +
+							"<img src='images/" + value.image +"'>" +
 							"<figurecaption><a href='" + value.imageurl + "' target='_blank'>Image Source</a></figurecaption>"+
 							"</figure>"+
 						"</div>"
