@@ -60,8 +60,8 @@ $(document).ready(function() {
 					var pros = value.pros;
 					var cons = value.cons;
 					
-					var prosHTML = "<ul>Pros";
-					var consHTML = "<ul>Cons";
+					var prosHTML = "<h4>Pros</h4><ul>";
+					var consHTML = "<h4>Cons</h4><ul>";
 					
 					//Pulls all cons and pros for each entry
 					for(var i = 0; i < pros.length || i < cons.length; i++){
@@ -71,9 +71,14 @@ $(document).ready(function() {
 					prosHTML += "</ul>";
 					consHTML += "</ul>";
 					
+					var embeded = "";
+					if( value.video != ""){
+						embeded = '<iframe width="560" height="315" src="' + value.video + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+					}
 					//Append text for the entry
 					$("#comparisontext").append(
 						"<div id='text" + entryCount +"' hidden>" +
+							embeded +
 							"<a href ='" + value.link +"' target='_blank'><h3>" + value.name+ "</h3></a>" +
 							"<p>" + value.description + "</p>" +
 							prosHTML + consHTML +

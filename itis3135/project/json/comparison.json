@@ -1,83 +1,92 @@
 {"products":[
 	{
 		"name": "Natures Head 2",
+		"video": "",
 		"link" : "https://store.natureshead.net/",
-		"description": "This is a toilet joke",
+		"description": "21 inch high portible toilet with build in waste compartments and agitator. Uses a 12V plug for a fan exhaust system.",
 		"image": "images/natureshead2.png",
 		"imageurl": "https://store.natureshead.net/nature-s-head-composting-toilet-with-foot-spider-handle.aspx",
-		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1"]
+		"pros" : ["Drops waste into a holdiong container, leaving your mess out of sight", "Built-in urine diversion" , "Venting hose including to divert smells and gases away from the toilet"],
+		"cons" : ["Expensive (~$1000)", "Semi-clear urine container doesn't hide urine levels."]
 	},
 	{
 		"name": "Airhead",
+		"video": "",
 		"link" : "https://airheadtoilet.com/?v=7516fd43adaa",
-		"description": "Insert a summary of your thoughts here",
+		"description": "~20 inch tall portible toilet with build in waste compartments and agitator.",
 		"image": "images/airhead.png",
 		"imageurl": "https://airheadtoilet.com/usa-shop/?v=7516fd43adaa",
-		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1", "Con 2", "Con 3"]
+		"pros" : ["Urine container has a small window that hides urine levels unless it needs to be emptied", "Waste reservoir at the bottom comes with a lid for easy tranport to a dumpsite without the extra weight of the top or the embarassment of carrying an open container of poop", "No electricity required"],
+		"cons" : ["Expensive(~$1050)"]
 	},
 	{
 		"name": "C-Head",
+		"video": "",
 		"link" : "https://www.c-head.com/",
-		"description": "Insert a summary of your thoughts here",
+		"description": "18 inch tall dry toilet. Also available in a 15in tall shorty model",
 		"image": "images/chead.png",
 		"imageurl": "https://www.c-head.com/product-page/basic-c-head-in-matte-white",
-		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1", "Con 2", "Con 3", "Con 4"]
+		"pros" : ["No electricity or water needed", "Built in urine diversion", "Small profile"],
+		"cons" : ["Expensive (~$825)"]
 	},
 	{
 		"name": "Squatty Potty",
+		"video": "https://www.youtube.com/video/YbYWhdLO43Q",
 		"link" : "https://www.squattypotty.com/",
-		"description": "<iframe width='560' height='315' style='margin-right:1.5em; float:left;' src='https://www.youtube.com/embed/YbYWhdLO43Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>Insert a summary of your thoughts here",
+		"description": "A stool that helps achieve a more 'natural' position when pooping.",
 		"image": "images/squattypotty.jpg",
 		"imageurl": "https://www.squattypotty.com/products/original",
-		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1", "Con 2", "Con 3"]
+		"pros" : ["Proven to improve bowel health", "Proved to reduce time on the toilet"],
+		"cons" : ["You'll never see ice cream the same again"]
 	},
 	{
 		"name": "Lovable Loo",
+		"video": "",
 		"link" : "https://loveableloo.store/",
-		"description": "Insert a summary of your thoughts here",
-		"image": "images/loveableloo.png",
+		"description": "16 inch tall box that can house a 5 gallon bucket to catch wastes.",
+		"image": "images/lovableloo.png",
 		"imageurl": "https://loveableloo.store/collections/all/products/loveable-loo-compost-toilet",
-		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1", "Con 2", "Con 3"]
+		"pros" : ["Can easily be painted for decoration/customization"],
+		"cons" : ["No waste diversions", "Expensive for a glorified bucket ($400)"]
 	},
 	{
 		"name": "Separett",
+		"video": "",
 		"link" : "https://separett.com/en",
-		"description": "Insert a summary of your thoughts here",
+		"description": "Product line of similarly designed toilets that handle your waste in different ways. These include freezing and incinerating options.",
 		"image": "images/separett.png",
-		"imageurl": "",
-		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1", "Con 2", "Con 3"]
+		"imageurl": "https://separett.com/en/urine-diverting-toilet-tiny-with-urine-container",
+		"pros" : ["Diverse variety of models", "Mid-high range($700+)", "Built-in urine diversion"],
+		"cons" : ["Mid-high range($700+)", "Some models require electricity and or water"]
 	},
 	{
 		"name": "Super Cheap Seat On Bucket",
+		"video": "",
 		"link" : "https://www.walmart.com/ip/Stansport-4-5-gal-Portable-Toilets/270524028?wmlspartner=wlpa&selectedSellerId=0&&adid=22222222227153685154&wl0=&wl1=g&wl2=c&wl3=264781781684&wl4=aud-1185573580265:pla-437998598570&wl5=9009904&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=270524028&veh=sem&gclid=Cj0KCQiAkZKNBhDiARIsAPsk0Wjfy_xKm5OsEIt40V1Ixl_kXhECRWWv9BcZqmuAj9PNxkJlYKF0KBoaAmVVEALw_wcB&gclsrc=aw.ds",
-		"description": "Insert a summary of your thoughts here",
+		"description": "A basic 5 gallon bucket with a plastic seat attached. Sits at 15.5 inches high(.5in less than ADA handicap height). ",
 		"image": "images/supercheapseat.png",
 		"imageurl": "https://www.walmart.com/ip/Stansport-4-5-gal-Portable-Toilets/270524028?wmlspartner=wlpa&selectedSellerId=0&&adid=22222222227153685154&wl0=&wl1=g&wl2=c&wl3=264781781684&wl4=aud-1185573580265:pla-437998598570&wl5=9009904&wl6=&wl7=&wl8=&wl9=pla&wl10=8175035&wl11=online&wl12=270524028&veh=sem&gclsrc=aw.ds",
-		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1", "Con 2", "Con 3"]
+		"pros" : ["Cheapest Option (~$30)", "Supports up to 300 lbs"],
+		"cons" : ["Some reviews complain of weak bucket construction"]
 	},
 	{
 		"name": "Nicer Seat on Bucket",
-		"link" : "",
-		"description": "Insert a summary of your thoughts here",
-		"image": "",
-		"imageurl": "",
-		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1", "Con 2", "Con 3"]
+		"video": "",
+		"link" : "https://www.lowes.com/pd/Playberg-Portable-Toilet-Camping-Hiking/5000215543?cm_mmc=shp-_-c-_-prd-_-kab-_-ggl-_-PLA_KAB_223_Bathroom-Storage-Accessories-_-5000215543-_-online-_-0-_-0&ds_rl=1286981&gclid=CjwKCAiA78aNBhAlEiwA7B76p-KtP-1uIqm0wND23Xsvq2LKnrawVFEaAT2OMFt7osQFJC-RS-goPRoC9joQAvD_BwE&gclsrc=aw.ds",
+		"description": "16 inch tall flushless and waterless toilet.",
+		"image": "images/nicerseat.jpg",
+		"imageurl": "https://www.lowes.com/pd/Playberg-Portable-Toilet-Camping-Hiking/5000215543?cm_mmc=shp-_-c-_-prd-_-kab-_-ggl-_-PLA_KAB_223_Bathroom-Storage-Accessories-_-5000215543-_-online-_-0-_-0&ds_rl=1286981&gclid=CjwKCAiA78aNBhAlEiwA7B76p-KtP-1uIqm0wND23Xsvq2LKnrawVFEaAT2OMFt7osQFJC-RS-goPRoC9joQAvD_BwE&gclsrc=aw.ds",
+		"pros" : ["Afordable (~$60)", "ADA height compliant", "Holds up to 8 gallons of waste"],
+		"cons" : ["No urine diversion"]
 	},
 	{
-		"name": "Thetford",
-		"link" : "https://www.thetford.com/",
-		"description": "Insert a summary of your thoughts here",
-		"image": "",
-		"imageurl": "",
-		"pros" : ["Pro 1", "Pro 2", "Pro 3"],
-		"cons" : ["Con 1", "Con 2", "Con 3"]
+		"name": "Thetford - Porta Potti 565E",
+		"video": "",
+		"link" : "https://www.thetford.com/product/porta-potti-565e/",
+		"description": "Portible wet toilet, holds up to 4 gallons of fresh water and 5 gallons of waste(good for appoximately 56 flushes). ",
+		"image": "images/portapotti565e.JPG",
+		"imageurl": "https://www.thetford.com/product/porta-potti-565e/",
+		"pros" : ["Affordable (~$200)" , "Battery Powered", "Integrated Tissue Holder"],
+		"cons" : ["No fume diversion"]
 	}
 ]}
