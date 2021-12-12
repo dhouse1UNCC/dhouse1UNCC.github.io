@@ -75,7 +75,9 @@ header a img{
 header a:hover{
 	opacity:50%;
 }
-
+.subtitle{
+	text-align:center;
+}
 /*CSS for Index starts here*/
 #homepage{
 	font-size:1.5em;
